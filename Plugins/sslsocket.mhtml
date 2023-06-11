@@ -1,0 +1,605 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://web.archive.org/web/20010504045423id_/http://www.essentrix.com:80/sslsocket/
+Subject: Essentrix - SSLSocket
+Date: Fri, 26 May 2023 05:47:38 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--PSAI3xyFnNpIOGMA0mqz5kscH2OSOALILyJYdcXRZ8----"
+
+
+------MultipartBoundary--PSAI3xyFnNpIOGMA0mqz5kscH2OSOALILyJYdcXRZ8----
+Content-Type: text/html
+Content-ID: <frame-0A880B2D99A0931E8AE91E40B90B9927@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://web.archive.org/web/20010504045423id_/http://www.essentrix.com:80/sslsocket/
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3Dwindows-1252">
+	=09
+		<meta name=3D"generator" content=3D"Adobe GoLive 5">
+		<title>Essentrix - SSLSocket</title>
+	</head>
+
+	<body bgcolor=3D"#ffffff">
+		<p><img src=3D"https://web.archive.org/web/20010504045423id_/http://www.e=
+ssentrix.com:80/sslsocket/MwRbVtLg.jpg" width=3D"108" height=3D"140" border=
+=3D"0" align=3D"right"><font size=3D"+4" face=3D"Arial,Helvetica,Geneva,Swi=
+ss,SunSans-Regular"><b>SSLSocket</b></font></p>
+		<p><font size=3D"+1" face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular=
+">v1.0</font></p>
+		<p><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">Add Secure=
+ Socket Layer communication to your REALbasic applications, allowing them t=
+o connect to and download data from any secure server on the web. Meant to =
+mimic REALbasic's own Socket control, SSLSocket seamlessly integrates secur=
+e sockets for an easy and transparent implementation.</font></p>
+		<p><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">Written by=
+ Tristan Perich (<a href=3D"mailto:tristan@essentrix.com">tristan@essentrix=
+.com</a>), December, 2000.</font></p>
+		<p><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><a href=3D=
+"http://www.essentrix.com/">Essentrix, Inc.</a></font></p>
+		<p><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><a href=3D=
+"http://order.kagi.com/cgi-bin/r1.cgi?U96&amp;">CLICK HERE TO REGISTER SSLS=
+OCKET</a></font></p>
+		<hr>
+		<p><font size=3D"+2" face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular=
+"><b>Download:</b></font></p>
+		<p><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">Download <=
+a href=3D"https://web.archive.org/web/20010504045423id_/http://www.essentri=
+x.com:80/sslsocket/SSLSocket10.sit.bin">SSLSocket v1.0</a> (stuffed and Mac=
+Binary'd)</font></p>
+		<hr>
+		<p><font size=3D"+2" face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular=
+"><b>Installation:</b></font></p>
+		<p><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">Drag the S=
+SLSocket plugin file included in this installation to the Plugins folder in=
+ your REALbasic application folder. If the Plugins folder does not exist, c=
+reate a folder named "Plugins" and place it in the REALbasic application fo=
+lder, and put the SSLSocket plugin file in that folder.</font></p>
+		<p><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">To use SSL=
+Socket in your project, you must either import the SSLSock class from the s=
+ample project (or from the file in the package) or create your own subclass=
+. You cannot drag SSLSocket directly into your project; you must first subc=
+lass it and set the subclass' super (in the properties window) to SSLSocket=
+. To do this, go to New Class from the File menu. Then select the class and=
+ set its super to SSLSocket. Then drag a regular socket to your window or w=
+hatever, and set its super to the class you just created. Hope this makes s=
+ense.</font></p>
+		<p><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">This is st=
+ill a early version of SSLSocket, so please email me your comments. There a=
+re some unresolved issues... right now my SubClass called SSLSock takes car=
+e of the complete negotiation by calling SSLContinueConnect until the conne=
+ction has been established. I want to have my plugin override the regular D=
+ataAvailable handler from within the plugin itself. How can this be done?</=
+font></p>
+		<p><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">Look at th=
+e sample project file SSLSocket Test to see a simple implementation.</font>=
+</p>
+		<hr>
+		<p><font size=3D"+2" face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular=
+"><b>Syntax:</b></font></p>
+		<p><b><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">SSLInit=
+(seed as String)</font></b></p>
+		<p><i><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">paramet=
+ers:</font></i></p>
+		<p><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">seed: a ra=
+ndom string used to seed the random number generator. This should be change=
+d each time SSLSocketInit is called.</font></p>
+		<p><i><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">descrip=
+tion:</font></i></p>
+		<p><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">Must be ca=
+lled once before running any of the other functions in SSLSocket. It need o=
+nly be called once.</font></p>
+		<p><i><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">example=
+:</font></i></p>
+		<p><tt>SSLSocketInit "uyq9,7-b(VHGT^%$&amp;^F/,876;,;./lkJHGFUY{PO*"</tt>=
+</p>
+		<p></p>
+		<p><b><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">SSLConn=
+ect()</font></b></p>
+		<p><i><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">descrip=
+tion:</font></i></p>
+		<p><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">Begins the=
+ secure connection with the server.</font></p>
+		<p><i><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">example=
+:</font></i></p>
+		<p><tt>theSocket.SSLSocketConnect</tt></p>
+		<p></p>
+		<p><b><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">SSLCont=
+inueConnect()</font></b></p>
+		<p><i><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">descrip=
+tion:</font></i></p>
+		<p><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">Continues =
+the secure connection with the server. Since the connection is a multi-step=
+ process, you must continue to call this function whenever new data is avai=
+lable until the connection has been completed.</font></p>
+		<p><i><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">example=
+:</font></i></p>
+		<p><tt>theSocket.SSLSocketConnect</tt></p>
+		<p></p>
+		<p><b><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">SSLRead=
+(bytes as Integer) as String</font></b></p>
+		<p><i><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">paramet=
+ers:</font></i></p>
+		<p><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">bytes: the=
+ number of bytes to be read.</font></p>
+		<p><i><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">descrip=
+tion:</font></i></p>
+		<p><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">Returns de=
+coded bytes from the secure stream. This function works exactly the same wa=
+y as a normal socket.Read(bytes) function does, but decodes the encrypted d=
+ata.</font></p>
+		<p><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><i>example=
+:</i></font></p>
+		<p><tt>dim inString as String<br>
+				inString =3D theSocket.SSLSocketRead(15)</tt></p>
+		<p></p>
+		<p><b><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">SSLWrit=
+e(out as String)</font></b></p>
+		<p><i><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">paramet=
+ers:</font></i></p>
+		<p><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">out: the s=
+tring you wish to write to the secure stream.</font></p>
+		<p><i><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">descrip=
+tion:</font></i></p>
+		<p><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">Sends the =
+passed string to the secure server as encrypted data. Works the same way as=
+ a normal socket.Write(out) function does, but it encodes the data and send=
+s it securely.</font></p>
+		<p><i><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">example=
+:</font></i></p>
+		<p><tt>theSocket.SSLSocketWrite("GET /index.html HTTP/1.0</tt><br>
+			<tt>" + chr(10) + chr(13) + chr(10) + chr(13))</tt></p>
+		<p></p>
+		<p><b><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">SSLShut=
+Down()</font></b></p>
+		<p><i><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">descrip=
+tion:</font></i></p>
+		<p><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">Whenever a=
+ socket connection is closed, this function should be called. Between sessi=
+ons it should also be called to free up the variables from the last session=
+.</font></p>
+		<p><i><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">example=
+:</font></i></p>
+		<p><tt>theSocket.SSLSocketShutDown</tt></p>
+		<p></p>
+		<p><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b>SSLConn=
+ected as Boolean</b></font></p>
+		<p><i><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">descrip=
+tion:</font></i></p>
+		<p><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">Returns tr=
+ue if an SSL connection has been successfully negotiated, and false if it h=
+asn't yet.</font></p>
+		<p><i><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">example=
+:</font></i></p>
+		<p><tt>if theSocket.SSLConnected then</tt></p>
+		<p><tt>&nbsp;&nbsp;&nbsp;MsgBox "We have a secure connection!"</tt></p>
+		<p></p>
+		<p><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b>SSLConn=
+ecting as Boolean</b></font></p>
+		<p><i><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">descrip=
+tion:</font></i></p>
+		<p><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">Returns tr=
+ue if the SSL connection is still being negotiated. </font></p>
+		<p><i><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">example=
+:</font></i></p>
+		<p><tt>if theSocket.SSLConnecting then</tt></p>
+		<p><tt>&nbsp;&nbsp;&nbsp;MsgBox "We are still connecting!"</tt></p>
+		<hr>
+		<p><font size=3D"+2" face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular=
+"><b>Examples:</b></font></p>
+		<p><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">Included w=
+ith this package is an example project demonstrating the initial capabiliti=
+es of SSLSocket.</font></p>
+		<p><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">To use SSL=
+Test App, enter an SSL server to connect to, and the port it is on, and cli=
+ck Connect. It will initiate the SSL connection with the aolmail.aol.com se=
+rver. The Command field is what will be written to the SSL server when the =
+SSLWrite button is pressed. Currently there is an HTTP GET command which re=
+quests the root HTML file.</font></p>
+		<p><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">The decode=
+d information sent from the server will show up in the incoming data field =
+at the bottom of the window.</font></p>
+		<p><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">The exampl=
+e project includes a SubClass of SSLSocket called SSLSock which handles a f=
+ew things nicely, so you should probably use it in your own projects. First=
+ of all, it includes an SSLReadAll function which reads all incoming data a=
+nd returns it as a string. Second of all, it handles the initial SSL connec=
+tion by repeatedly calling SSLContinueConnect until it has connected, and t=
+hen passing the incoming data to its instances. Third, it adds a WeakSeed f=
+unction with seeds SSLSocket with a weakly random key, based on REALbasic's=
+ pseudo-random number generator. I would recommend looking at its code to u=
+nderstand how SSLSocket works.</font></p>
+		<p><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">If any cha=
+nges or improvements are made to the default project, or a better project i=
+s made, please send it to me at tristan@essentrix.com and I would like to i=
+nclude it with this release.</font></p>
+		<hr>
+		<p><font size=3D"+2" face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular=
+"><b>Purchasing SSLSocket:</b></font></p>
+		<p><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">You may do=
+wnload an evaluation copy of SSLSocket for free. It can only be used per pl=
+ugin initialization, </font><font face=3D"Arial,Helvetica,Geneva,Swiss,SunS=
+ans-Regular">which means once per launched copy of a built app with it, or =
+once per launch of REALbasic. Sorry about this.</font></p>
+		<p><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">Registrati=
+on costs $129.00 and:</font></p>
+		<p><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">a) lets yo=
+u use SSLSocket without restriction</font></p>
+		<p><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">b) entitle=
+s you to unlimited free upgrades of SSLSocket for any platform as they are =
+released</font></p>
+		<p><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><a href=3D=
+"http://order.kagi.com/cgi-bin/r1.cgi?U96&amp;">CLICK HERE TO REGISTER SSLS=
+OCKET</a></font></p>
+		<hr>
+		<p><font size=3D"+2" face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular=
+"><b>Contacts:</b></font></p>
+		<p><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">Web Site:<=
+/font></p>
+		<p><a href=3D"http://www.tristanperich.com/"><font face=3D"Arial,Helvetic=
+a,Geneva,Swiss,SunSans-Regular">http://www.essentrix.com</font></a></p>
+		<p><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">Also! Chec=
+k out my home page, <a href=3D"http://www.tristanperich.com/">http://www.tr=
+istanperich.com</a>, where I have posted recordings and scores of my contem=
+porary classical compositions! Feedback is welcome on that too!</font></p>
+		<p><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">Contacting=
+ me:</font></p>
+		<p><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><a href=3D=
+"mailto:tristan@essentrix.com">tristan@essentrix.com</a></font></p>
+		<p><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><a href=3D=
+"mailto:email@essentrix.com">email@essentrix.com</a></font></p>
+		<hr>
+		<p><font size=3D"+2" face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular=
+"><b>Important!:</b></font></p>
+		<p><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">This softw=
+are package uses strong cryptography, so even if it is created, maintained =
+and distributed from liberal countries in Europe (where it is legal to do t=
+his), it falls under certain export/import and/or use restrictions in some =
+other parts of the world. <br>
+				<br>
+				PLEASE REMEMBER THAT EXPORT/IMPORT AND/OR USE OF STRONG CRYPTOGRAPHY SO=
+FTWARE, PROVIDING CRYPTOGRAPHY HOOKS OR EVEN JUST COMMUNICATING TECHNICAL D=
+ETAILS ABOUT CRYPTOGRAPHY SOFTWARE IS ILLEGAL IN SOME PARTS OF THE WORLD. S=
+O, WHEN YOU IMPORT THIS PACKAGE TO YOUR COUNTRY, RE-DISTRIBUTE IT FROM THER=
+E OR EVEN JUST EMAIL TECHNICAL SUGGESTIONS OR EVEN SOURCE PATCHES TO THE AU=
+THOR OR OTHER PEOPLE YOU ARE STRONGLY ADVISED TO PAY CLOSE ATTENTION TO ANY=
+ EXPORT/IMPORT AND/OR USE LAWS WHICH APPLY TO YOU. THE AUTHORS OF SSLSOCKET=
+ ARE NOT LIABLE FOR ANY VIOLATIONS YOU MAKE HERE. SO BE CAREFUL, IT IS YOUR=
+ RESPONSIBILITY.</font></p>
+		<p><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">This produ=
+ct includes software developed by the OpenSSL Project for use in the OpenSS=
+L Toolkit (http://www.openssl.org/).</font></p>
+		<p><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">This produ=
+ct includes cryptographic software written by Eric Young (eay@cryptsoft.com=
+)</font></p>
+		<p><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">Due to pat=
+ents, SSLSocket does not implement the IDEA algorithms.</font></p>
+		<hr>
+		<p><font size=3D"+2" face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular=
+"><b>Licences:</b></font></p>
+		<p><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">SSLSocket =
+is Copyright (c) 2000, Tristan Perich. All rights reserved.</font></p>
+		<p><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">Distributi=
+on of SSLSocket is free, provided all files included in the original downlo=
+ad package are included in all subsequent distributions.</font></p>
+		<p><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">Developmen=
+t of commercial software, or even distributed shareware with the beta versi=
+on of SSLSocket is prohibited; do this when the final version is out. All p=
+rograms written which use, in part or in whole, functionality from the fina=
+l versino of SSLSocket must include this agreement, the OpenSSL License bel=
+ow and the SSLeay License below that, and must include the statement: "Part=
+s of this program were written by Tristan Perich, Essentrix, Inc." They mus=
+t also follow specifically the software licenses appearing below this licen=
+se, specifically for OpenSSL and SSLeay.</font></p>
+		<p><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular">THIS SOFTW=
+ARE IS PROVIDED BY ESSENTRIX ``AS IS'' AND ANY </font><font face=3D"Arial,H=
+elvetica,Geneva,Swiss,SunSans-Regular">EXPRESSED OR IMPLIED WARRANTIES, INC=
+LUDING, BUT NOT LIMITED TO, THE </font><font face=3D"Arial,Helvetica,Geneva=
+,Swiss,SunSans-Regular">IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS F=
+OR A PARTICULAR</font><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Re=
+gular"> PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL ESSENTRIX OR</font><font =
+face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular"> ITS CONTRIBUTORS BE =
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,</font><font face=3D"Arial,Helv=
+etica,Geneva,Swiss,SunSans-Regular"> SPECIAL, EXEMPLARY, OR CONSEQUENTIAL D=
+AMAGES (INCLUDING, BUT</font><font face=3D"Arial,Helvetica,Geneva,Swiss,Sun=
+Sans-Regular"> NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;=
+</font><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular"> LOSS OF=
+ USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)</font><font face=3D"Arial=
+,Helvetica,Geneva,Swiss,SunSans-Regular"> HOWEVER CAUSED AND ON ANY THEORY =
+OF LIABILITY, WHETHER IN CONTRACT,</font><font face=3D"Arial,Helvetica,Gene=
+va,Swiss,SunSans-Regular"> STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE =
+OR OTHERWISE)</font><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regu=
+lar"> ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED</=
+font><font face=3D"Arial,Helvetica,Geneva,Swiss,SunSans-Regular"> OF THE PO=
+SSIBILITY OF SUCH DAMAGE.</font></p>
+		<p><tt>OpenSSL License<br>
+			=09
+				  ---------------<br>
+				<br>
+			=09
+				/* =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D<br>
+			=09
+				 * Copyright (c) 1998-2000 The OpenSSL Project.  All rights reserved.<b=
+r>
+			=09
+				 *<br>
+			=09
+				 * Redistribution and use in source and binary forms, with or without<b=
+r>
+			=09
+				 * modification, are permitted provided that the following conditions<b=
+r>
+			=09
+				 * are met:<br>
+			=09
+				 *<br>
+			=09
+				 * 1. Redistributions of source code must retain the above copyright<br=
+>
+			=09
+				 *    notice, this list of conditions and the following disclaimer. <br=
+>
+			=09
+				 *<br>
+			=09
+				 * 2. Redistributions in binary form must reproduce the above copyright=
+<br>
+			=09
+				 *    notice, this list of conditions and the following disclaimer in<b=
+r>
+			=09
+				 *    the documentation and/or other materials provided with the<br>
+			=09
+				 *    distribution.<br>
+			=09
+				 *<br>
+			=09
+				 * 3. All advertising materials mentioning features or use of this<br>
+			=09
+				 *    software must display the following acknowledgment:<br>
+			=09
+				 *    "This product includes software developed by the OpenSSL Project<=
+br>
+			=09
+				 *    for use in the OpenSSL Toolkit. (http://www.openssl.org/)"<br>
+			=09
+				 *<br>
+			=09
+				 * 4. The names "OpenSSL Toolkit" and "OpenSSL Project" must not be use=
+d to<br>
+			=09
+				 *    endorse or promote products derived from this software without<br=
+>
+			=09
+				 *    prior written permission. For written permission, please contact<=
+br>
+			=09
+				 *    openssl-core@openssl.org.<br>
+			=09
+				 *<br>
+			=09
+				 * 5. Products derived from this software may not be called "OpenSSL"<b=
+r>
+			=09
+				 *    nor may "OpenSSL" appear in their names without prior written<br>
+			=09
+				 *    permission of the OpenSSL Project.<br>
+			=09
+				 *<br>
+			=09
+				 * 6. Redistributions of any form whatsoever must retain the following<=
+br>
+			=09
+				 *    acknowledgment:<br>
+			=09
+				 *    "This product includes software developed by the OpenSSL Project<=
+br>
+			=09
+				 *    for use in the OpenSSL Toolkit (http://www.openssl.org/)"<br>
+			=09
+				 *<br>
+			=09
+				 * THIS SOFTWARE IS PROVIDED BY THE OpenSSL PROJECT ``AS IS'' AND ANY<b=
+r>
+			=09
+				 * EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE<=
+br>
+			=09
+				 * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR<b=
+r>
+			=09
+				 * PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE OpenSSL PROJECT OR<br=
+>
+			=09
+				 * ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,<br>
+			=09
+				 * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT<br>
+			=09
+				 * NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;<br>
+			=09
+				 * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)<br>
+			=09
+				 * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,<=
+br>
+			=09
+				 * STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)<br>
+			=09
+				 * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED<=
+br>
+			=09
+				 * OF THE POSSIBILITY OF SUCH DAMAGE.<br>
+			=09
+				 * =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D<br>
+			=09
+				 *<br>
+			=09
+				 * This product includes cryptographic software written by Eric Young<b=
+r>
+			=09
+				 * (eay@cryptsoft.com).  This product includes software written by Tim<=
+br>
+			=09
+				 * Hudson (tjh@cryptsoft.com).<br>
+			=09
+				 *<br>
+			=09
+				 */<br>
+				<br>
+			=09
+				 Original SSLeay License<br>
+			=09
+				 -----------------------<br>
+				<br>
+			=09
+				/* Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)<br>
+			=09
+				 * All rights reserved.<br>
+			=09
+				 *<br>
+			=09
+				 * This package is an SSL implementation written<br>
+			=09
+				 * by Eric Young (eay@cryptsoft.com).<br>
+			=09
+				 * The implementation was written so as to conform with Netscapes SSL.<=
+br>
+			=09
+				 * <br>
+			=09
+				 * This library is free for commercial and non-commercial use as long a=
+s<br>
+			=09
+				 * the following conditions are aheared to.  The following conditions<b=
+r>
+			=09
+				 * apply to all code found in this distribution, be it the RC4, RSA,<br=
+>
+			=09
+				 * lhash, DES, etc., code; not just the SSL code.  The SSL documentatio=
+n<br>
+			=09
+				 * included with this distribution is covered by the same copyright ter=
+ms<br>
+			=09
+				 * except that the holder is Tim Hudson (tjh@cryptsoft.com).<br>
+			=09
+				 * <br>
+			=09
+				 * Copyright remains Eric Young's, and as such any Copyright notices in=
+<br>
+			=09
+				 * the code are not to be removed.<br>
+			=09
+				 * If this package is used in a product, Eric Young should be given att=
+ribution<br>
+			=09
+				 * as the author of the parts of the library used.<br>
+			=09
+				 * This can be in the form of a textual message at program startup or<b=
+r>
+			=09
+				 * in documentation (online or textual) provided with the package.<br>
+			=09
+				 * <br>
+			=09
+				 * Redistribution and use in source and binary forms, with or without<b=
+r>
+			=09
+				 * modification, are permitted provided that the following conditions<b=
+r>
+			=09
+				 * are met:<br>
+			=09
+				 * 1. Redistributions of source code must retain the copyright<br>
+			=09
+				 *    notice, this list of conditions and the following disclaimer.<br>
+			=09
+				 * 2. Redistributions in binary form must reproduce the above copyright=
+<br>
+			=09
+				 *    notice, this list of conditions and the following disclaimer in t=
+he<br>
+			=09
+				 *    documentation and/or other materials provided with the distributi=
+on.<br>
+			=09
+				 * 3. All advertising materials mentioning features or use of this soft=
+ware<br>
+			=09
+				 *    must display the following acknowledgement:<br>
+			=09
+				 *    "This product includes cryptographic software written by<br>
+			=09
+				 *     Eric Young (eay@cryptsoft.com)"<br>
+			=09
+				 *    The word 'cryptographic' can be left out if the rouines from the =
+library<br>
+			=09
+				 *    being used are not cryptographic related :-).<br>
+			=09
+				 * 4. If you include any Windows specific code (or a derivative thereof=
+) from <br>
+			=09
+				 *    the apps directory (application code) you must include an acknowl=
+edgement:<br>
+			=09
+				 *    "This product includes software written by Tim Hudson (tjh@crypts=
+oft.com)"<br>
+			=09
+				 * <br>
+			=09
+				 * THIS SOFTWARE IS PROVIDED BY ERIC YOUNG ``AS IS'' AND<br>
+			=09
+				 * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, TH=
+E<br>
+			=09
+				 * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR P=
+URPOSE<br>
+			=09
+				 * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIA=
+BLE<br>
+			=09
+				 * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQU=
+ENTIAL<br>
+			=09
+				 * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GO=
+ODS<br>
+			=09
+				 * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION=
+)<br>
+			=09
+				 * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, =
+STRICT<br>
+			=09
+				 * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN AN=
+Y WAY<br>
+			=09
+				 * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY =
+OF<br>
+			=09
+				 * SUCH DAMAGE.<br>
+			=09
+				 * <br>
+			=09
+				 * The licence and distribution terms for any publically available vers=
+ion or<br>
+			=09
+				 * derivative of this code cannot be changed.  i.e. this code cannot si=
+mply be<br>
+			=09
+				 * copied and put under another distribution licence<br>
+			=09
+				 * [including the GNU Public Licence.]<br>
+			=09
+				 */<br>
+				<br>
+			</tt></p>
+=09
+
+</body></html>
+------MultipartBoundary--PSAI3xyFnNpIOGMA0mqz5kscH2OSOALILyJYdcXRZ8------

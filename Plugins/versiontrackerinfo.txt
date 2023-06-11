@@ -1,0 +1,65 @@
+Version Tracker 0.1
+
+Version Tracker 0.1 is a custom class based on httpSocket by Dan Vanderkamp plus a constants module. It enables your applications and users to look for new versions of your programs online on the net and if neccessary get the latest update automatically. It uses a special text files to retrieve the information via HTTP. Setting up your own version tracker system is fairly easy - don't be afraid of the seemingly weird setup procedure! 
+
+I. Installation
+
+First drop httpSocket into your project folder. Then drop the VersionTrackSocket and the CONST_VersionTracker module onto the project. All constants used by version tracker begin with VT_ to avoid chances of future naming collisions.
+
+II. Using the VersionTrackSocket
+
+(a) Methods
+
+GetGeneralFileInfo url as String, appName as String
+
+Retrieve general file information application appName. The url must point to a version tracker info file like, e.g. http://www.snafu.de/~erich/fileinfo.txt
+The format of the version tracker info file is described below in section III
+
+(b) Events
+
+GeneralInfo( versionStr as String, version as Integer, dlSize as String, HomepageURL as String, dlLinkList as String)
+
+The general file information has been received. versionStr contains the current verbose version of the application, say "Version Tracker PPC 1.0". version contains the numeric version number (in my numbering system it would be 100 for version 1.0). dlSize contains the approximate size of the download, I use a string because I'm too lazy to implement a bytesize pretty printer, sample is "730K". HomepageURL is the url of the program's homepage, in this case "http://www.snafu.de/~erich/realbasic/rb.html". dlLinkList is a list of possible URLs where you can download the actual version. By what the list is seperated depends on your info file format, I use chr(13).
+
+InfoNotAvailable( appName as String )
+
+The requested information for appName could not be found on the server. Note that there are still the httpSocket events cancelled and error for you to check... these can also mean that the info is not available!
+
+InfoText( txt as String )
+
+The info text for the requested application has been received. You can display it to your user or do whatever you want with it. However, you may want to wait with displaying it until the style data has been loaded. Note that the infotext does not have to be requested specially, it gets sent, after the general info has been received.
+
+InfoTextStyle( style as String )
+
+The style data for the infotext has been received. Well, hopefully it is style data, as it may be any binary data you have put on your server. The accompanied converter application can be used to split up a teachtext file into the text and its style data, so you can use editfield.setTextandStyle with it. However, keep sure you are transmitting in binary mode! (Works with Anarchy, but Fetch automatically sends text in text mode even if you switch it to binary mode...)
+
+III. The info file format
+
+Line			Explanation
+-----			-----------
+1				search term (application name without any version info)
+2				str(version) the version number suitable for val(number)
+3				verbose application name + version information
+4				download size (as you like it)
+5				homepage url
+6				url of the information text
+7				url of the style data of the information text 
+8				<unused> will contain a picture soon :-)
+.
+. <unused lines, don't use them if you want compatibility with next versions!>
+.
+***				the dlLinkList seperator, after this you get the dlLinkList
+.
+.				the download links (as many as you like)
+.
+###				the record seperator
+
+heck, this looks weird. Look at the sample file and it will be much clearer to you... ;-)
+
+IV. Contact 
+
+Well, you can always use the sample program to get the latest version of version tracker, of course. If you have suggestions, bug reports, donations, flames etc., please send them to erich@snafu.de
+
+Greetings,
+
+Erich H Rast ( erich@snafu.de )

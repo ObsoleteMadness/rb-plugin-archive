@@ -1,0 +1,133 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://web.archive.org/web/20111105084645id_/http://homepage.mac.com/vanhoek/Plug%20Docs/QTFT/Documentation/Data/PluginMain.html
+Subject: QTFT.rbx
+Date: Fri, 26 May 2023 05:58:45 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--0VA91uZgisAMu2iNO9zhZDXykxK810PFk10nD4QASn----"
+
+
+------MultipartBoundary--0VA91uZgisAMu2iNO9zhZDXykxK810PFk10nD4QASn----
+Content-Type: text/html
+Content-ID: <frame-0FB88FADCFD689A5516E005935BC3DED@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://web.archive.org/web/20111105084645id_/http://homepage.mac.com/vanhoek/Plug%20Docs/QTFT/Documentation/Data/PluginMain.html
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3Dwindows-1252">
+	=09
+		<meta name=3D"generator" content=3D"iDoc">
+		<title>QTFT.rbx</title>
+		<link href=3D"https://web.archive.org/web/20111105084645id_/http://homepa=
+ge.mac.com/vanhoek/Plug%20Docs/QTFT/Documentation/Data/idoc.css" type=3D"te=
+xt/css" rel=3D"stylesheet">
+	</head>
+
+	<body id=3D"bodyID" class=3D"dtBODY">
+		<div id=3D"nsbanner">
+			<div id=3D"bannerrow1">
+				<table class=3D"bannerparthead" cellspacing=3D"0">
+					<tbody><tr id=3D"hdr">
+						<td class=3D"runninghead"></td>
+						<td class=3D"product"></td>
+					</tr>
+				</tbody></table>
+			</div>
+			<div id=3D"TitleRow">
+				<h1 class=3D"dtH1">QTFT.rbx</h1>
+			</div>
+		</div>
+		<table class=3D"dttTABLE" cellspacing=3D"0" cellpadding=3D"0">
+			<tbody><tr height=3D"30">
+				<td width=3D"100" height=3D"30"></td>
+				<td height=3D"30"></td>
+			</tr>		=09
+			<tr>
+				<td width=3D"100">
+					<h4>Version:</h4>
+				</td>
+				<td><h5></h5></td>
+			</tr>
+			<tr>
+				<td width=3D"100">
+					<h4>Compatible:</h4>
+				</td>
+				<td><h5>Mac OS and Windows, RB 2005 or later</h5></td>
+			</tr>
+			<tr>
+				<td width=3D"100">
+					<h4>Requirements:</h4>
+				</td>
+				<td><h5>REALbasic 5 or later</h5></td>
+			</tr>
+			<tr>
+				<td width=3D"100">
+					<h4>Dependencies:</h4>
+				</td>
+				<td><h5>QuickTime</h5></td>
+			</tr>
+			<tr height=3D"10">
+				<td width=3D"100" height=3D"10"></td>
+				<td height=3D"10"></td>
+			</tr>
+		</tbody></table>
+		<div id=3D"nstext">
+		<h4 class=3D"dtH4">Summary:</h4>
+		QTFT or QuickTime FileTransfer allows the transfer of remote files to loc=
+al files, including the transfer of files into REALbasic's virtual volumes =
+and out. The crux of this plugin is to transfer the files asynchroneously a=
+nd as quickly as possible. This plugin is a rewrite of our older QTFileTran=
+sfer plugin.
+		<h4 class=3D"dtH4">Remarks:</h4>
+		=09
+			<h4 class=3D"dtH4">Agreement:</h4>
+			 The Van Hoek Software is provided by Van Hoek Software on an "AS IS" ba=
+sis. There are no warranties, no liabilities for damages. Your use and inst=
+allation of the licensed version, or redistribution of the demo version of =
+this REALbasic plugin constitutes acceptance of these terms. If you do not =
+agree with these terms, please do not use, install, or redistribute this Va=
+n Hoek Software Plugin.<br></div>
+		<table class=3D"dttTABLE" cellspacing=3D"0" cellpadding=3D"0">
+			<tbody><tr height=3D"10">
+				<td colspan=3D"2" height=3D"10">
+					<hr>
+				</td>
+			</tr>
+			<tr>
+				<td colspan=3D"2">
+					<h4></h4>
+				</td>
+			</tr>
+		</tbody></table>
+		<table class=3D"dttTABLE" cellspacing=3D"0" cellpadding=3D"0">
+			<tbody><tr>
+				<td width=3D"100">
+					<h4>E-mail:</h4>
+				</td>
+				<td>
+					<h5> <a href=3D"mailto:"></a></h5>
+				</td>
+			</tr>
+			<tr>
+				<td width=3D"100">
+					<h4>Website: </h4>
+				</td>
+				<td>
+					<h5><a href=3D"https://web.archive.org/web/20111105084645id_/http://ho=
+mepage.mac.com/vanhoek/Plug%20Docs/QTFT/Documentation/Data/PluginMain.html"=
+></a></h5>
+				</td>
+			</tr>
+		</tbody></table>
+=09
+
+</body></html>
+------MultipartBoundary--0VA91uZgisAMu2iNO9zhZDXykxK810PFk10nD4QASn----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://web.archive.org/web/20111105084645id_/http://homepage.mac.com/vanhoek/Plug%20Docs/QTFT/Documentation/Data/idoc.css
+
+@charset "utf-8";
+=0A
+------MultipartBoundary--0VA91uZgisAMu2iNO9zhZDXykxK810PFk10nD4QASn------

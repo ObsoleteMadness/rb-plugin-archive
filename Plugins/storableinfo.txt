@@ -1,0 +1,192 @@
+Ê
+
+Storable Objects
+
+Version: 1.0 beta 4
+Release: 16.10.1999
+Author: Erich Rast
+Email: erich@snafu.de
+
+Storable Objects is a package to make storing and retrieving the state of RB classes easy. It consists of a Storable interface class, a StorableStream class, a StorableConstants module and a bunch of storable subclasses of RB controls. The package is open source free to use for everyone. Take a look at the sample project to see how it works.
+
+Note: The file format has not been changed and is compatible with 10b3.
+
+0. Changes & New Stuff
+
+* New StorableStream methods (untested):
+   - Section( id as String )
+          to write a section start to the stream
+   - SetSection( id as String ) as Integer
+          to set the stream position to the beginning of the section determined by id
+* Documentation updated
+
+I.Installation
+
+Drop the Storable class, the StorableStream class and the StorableConstants module onto the project window. If you want to use one of the pre-made storable RB controls, drop the class on the project window as well. You will also need to define a file type "Storable" (without quotes) in the File Types section of the Edit menu.
+
+II. Usage
+
+(a) Introduction
+
+The Storable class implements two methods:
+
+Store( out as StorableStream ) as Integer
+Restore(in as StorableStream ) as Integer
+
+To make a class of yours storable, you have to write Storable in its interface class property in the properties window. You then have to add a Store method to store the state of your class into the StorableStream. You also have to add the code to retrieve the stored information in your classes Restore method. A zero integer reply indicates that the operation was successful, whereas a negative reply indicates an error.
+
+You can now use a storable stream to dump and undump a storable object to and from a string. See below and the sample app for the syntax.
+
+(b) StorableStream
+
+The constructor of a StorableStream takes a folderItem and a Boolean value as arguments. Passing a true value will cause the stream write to the resourceFork of the ﬁle instead of the data fork. A sample:
+
+Dim f as FolderItem
+Dim storage as StorableStream
+f = GetFolderItem("test")
+If f <> NIL Then
+storage = new StorableStream( f, CStorable_useDataFork )
+End If
+
+This will create a new StorableStream or make an existing ﬁle ready for use as a stream and all data will be written and read to / from the resource fork. You will still have to open the stream or otherwise you get an unhandled NIL exception! If you pass NIL as a FolderItem, the StorableStream will write to the TemporaryFolder and all the data will be deleted when the StorableStream object gets deleted from memory.
+
+As an alternative constructor, you can pass a streamVersion number to the stream as well:
+
+storage = new StorableStream(f, 120, CStorable_useResFork)
+
+Here is an alphabetic list of all public methods of the StorableStream class. Please refer to section 2.2 of the Developer's Guide for more information. 
+
+Commit
+  end of a store method
+Create
+  create stream for write
+Create( version as String )
+  create stream for write giving version string
+Close
+  close stream after read / write
+Dump(obj as Storable) as String
+  dump object data to string
+EOF() as Boolean
+  end of file reached
+Header(uniqueObjectID as Variant)
+  write header definition to stream
+LastError() as Integer
+  return last error code
+Open
+  open stream for read access
+Read() as Variant
+  read an entry from the stream
+ReadBoolean, ReadLong, ReadDouble, ReadString
+  read an entry of a certain type from stream
+ReadComplete
+  end of a restore method
+ReadHeader() as String
+  read a header from stream, return the unique object id
+ReadPicture() as Picture
+  read a picture from stream
+Require( version as Integer) as Boolean
+  skip version tag if version >= the version of the tag
+Section( sectionID as String)
+  mark topmost object in hierarchy as start of a section
+SetPosition( uniqueID as String) as Integer
+  set the position of the stream to start as object by id, return error code
+SetSection( sectionID as String) as Integer
+  set the stream position to the beginning of a section, return error code
+Skip
+  skip a data entry
+SkipHeader
+  skip a header tag while reading
+SkipObject
+  set stream position to the beginning of the next object
+StorableFile( f as FolderItem) as Boolean
+  return true if f is a storable data file, false otherwise
+StorableObjects_Version() as String
+  return version string set by create( version as String) call after open
+streamVersion as Integer
+  return the streamVersion
+Undump(objStr as String, obj as Storable) as Integer
+  restore obj to the state stored in objStr, return error code
+Version(i as Integer)
+  write a version tag to the stream
+Write(v as Variant)
+  write a data entry to the stream
+WritePicture(pict as Picture)
+  write a picture to the stream
+WriteBoolean, WriteLong, WriteDouble, WriteString
+  write data of a certain type to the stream
+
+(c) StorableConstants: types of objects
+
+Unfortunately, RB does currently not allow to get a unique identiﬁer for the class of an object. There, the package implements its own type constants. When you add you own storable classes, you should always ﬁrst write a header with a unique object id and the type information as a string. To avoid name clashing, itÕs best to use a longer string that e.g. contains your name and the class name.
+
+All constants of the StorableConstants module start with the prefix CStorable_
+
+(d) Pre-deﬁned storable controls
+
+The current release supports the following RB controls:
+
+editﬁeld
+checkbox
+radiobutton
+pushbutton
+bevelbutton (no pictures/icons saved)
+listbox (rowPictures not saved)
+popupmenu
+slider
+scrollbar
+canvas
+imagewell
+ContextualMenu
+DisclosureTriangle
+GroupBox
+Line
+StaticText
+
+From the RectControl superclass of these classes, only the enabled and the visible properties are stored. The predeﬁned classes now all have two additional methods:
+
+Dump() as String
+
+return the objectÕs state as a string
+
+Undump(objStr as String) as Integer
+
+restore the object and return error code
+
+(e) WindowStorer class
+
+You can store and restore the contents of a window (to be more precise, of its storable classes) by using the new windowStorer class. It takes the window and a unique id as constructor argument and can be stored and restored in the usual way. HereÕs a sample how to store a windowÕs contents:
+
+Dim f as FolderItem
+Dim storer as WindowStorer
+Dim storage as StorableStream
+Dim i, result as Integer
+f = GetFolderItem("storable data")
+If  f <>NIL Then
+  storage = new StorableStream(f, false) // write to data fork
+  If storage<>NIL Then
+    storage.create // new in 1.0b2
+    storer = new WindowStorer(self, 100)
+    If storer.Store(storage)<>CStorable_OK Then
+      MsgBox "Oops, the window couldnÕt be stored!"
+    End If
+    storage.close
+  End If
+End If
+
+See the example for more information.
+
+III. Troubleshooting & Miscellaneous
+
+This package is under continuing development. I hope that the file format is good enough for real world use and I do not intend to change it unless it isn't necessary. Please let me know if you find a bug or something to improve. 
+
+IV. Contact
+
+If you know of any hack to *store* a movie into a ﬁle, please let me know and I will implement the storable and dumpable movie classes. I generally appreciate feedback--- please let me know when you use the package and what you use it for as this is also a motivation for me to continue working on it.
+
+Write to:
+
+erich@snafu.de
+
+
+
+

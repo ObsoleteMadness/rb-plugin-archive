@@ -1,0 +1,857 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://web.archive.org/web/20010125061400id_/http://www.tempel.org/rb/index.html#RBpa
+Subject: Thomas Tempelmann's REALbasic tips & demos
+Date: Fri, 26 May 2023 04:29:13 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--hOdd77CVb1eAVD33f9T3mV20zfRsp2Pbi09qpc1Tty----"
+
+
+------MultipartBoundary--hOdd77CVb1eAVD33f9T3mV20zfRsp2Pbi09qpc1Tty----
+Content-Type: text/html
+Content-ID: <frame-34A75661D3455069F96736DA01B2CDA3@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://web.archive.org/web/20010125061400id_/http://www.tempel.org/rb/index.html#RBpa
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3Dwindows-1252">
+   <title>Thomas Tempelmann's REALbasic tips &amp; demos</title>
+<meta name=3D"description" content=3D"REALbasic sample code, programming ti=
+ps, reusable classes and plugins"><meta name=3D"keywords" content=3D"REALba=
+sic, SortInterface, QuickSort, BubbleSort, Sorting, Exception Handling, Cat=
+Search, FileMgr, MacsBug, HideMenubar, Hiding the menu bar, AliasRecord, Ev=
+entMonitor"><meta name=3D"Name" content=3D"Thomas Tempelmann">
+</head>
+<body>
+<h2>Welcome to the REALbasic page of Thomas Tempelmann</h2>
+
+<blockquote>Here you'll find some tips, examples, reusable classes
+   and plugins for REALbasic. All code and information, unless
+   specifically noted, is free for your unlimited use.
+  =20
+   <p>Questions, comments? Write to <a href=3D"mailto:rb@tempel.org">rb@tem=
+pel.org</a></p></blockquote>
+
+<p>
+
+</p><hr width=3D"90%">
+
+<br>
+
+<h2>Overview</h2>
+
+<h3>Created by me</h3>
+
+<ul>
+   <li><font color=3D"#FF0000">Updated Jan 22, 01: </font><a href=3D"https:=
+//web.archive.org/web/20010125061400id_/http://www.tempel.org/rb/index.html=
+#Starter">TT's
+   Plugin Starter</a> gives you a skeleton for <b>writing your own RB
+   plugins</b>.</li>
+  =20
+   <li><font color=3D"#FF0000">New Jan 2001:</font> A plugin for
+   interfacing with the <a href=3D"https://web.archive.org/web/200101250614=
+00id_/http://www.tempel.org/newton/index.html">Newton</a>
+   Messagepad is in the works.</li>
+  =20
+   <li>See here for <a href=3D"https://web.archive.org/web/20010125061400id=
+_/http://www.tempel.org/rb/index.html#carbon">Carbon versions</a> of my
+   plugins.</li>
+  =20
+   <li><b>View any plugin's methods</b> and other functions with the
+   <a href=3D"https://web.archive.org/web/20010125061400id_/http://www.temp=
+el.org/rb/index.html#RBpa">RBplugin Plunger</a>.</li>
+  =20
+   <li><a href=3D"https://web.archive.org/web/20010125061400id_/http://www.=
+tempel.org/rb/index.html#CatSearch">Search a Volume</a> for files by their
+   name, type, creator and/or flags. (<b>CatSearch</b>).</li>
+  =20
+   <li>Now you can inquire the <b>Keys</b> of a <b>Collection</b>
+   with <a href=3D"https://web.archive.org/web/20010125061400id_/http://www=
+.tempel.org/rb/index.html#Collection">this plugin</a>.</li>
+  =20
+   <li><a href=3D"https://web.archive.org/web/20010125061400id_/http://www.=
+tempel.org/rb/index.html#BitOps">The Bit Ops Plugin</a> offers you nearly a
+   zillion bit operations on Integers and sets.</li>
+  =20
+   <li>A <a href=3D"https://web.archive.org/web/20010125061400id_/http://ww=
+w.tempel.org/rb/index.html#CRC">CRC Plugin</a> lets you calculate <b>CRCs</=
+b>
+   (16, 32 and even 64 bit!).</li>
+  =20
+   <li>The <a href=3D"https://web.archive.org/web/20010125061400id_/http://=
+www.tempel.org/rb/index.html#MemoryBlock">MemoryBlock</a> extension support=
+s
+   Windows now, too.</li>
+  =20
+   <li><a href=3D"https://web.archive.org/web/20010125061400id_/http://www.=
+tempel.org/rb/index.html#CatSearch">Search a Volume</a> for files by their
+   name, type, creator and/or flags. (<b>CatSearch</b>).</li>
+  =20
+   <li>Keep track of Events (<b>function keys, idle events</b>) with
+   the <a href=3D"https://web.archive.org/web/20010125061400id_/http://www.=
+tempel.org/rb/index.html#EventMonitor">EventMonitor</a> class.</li>
+  =20
+   <li><b>Launch apps</b> in the background, and open documents with
+   the app of your choice with my <a href=3D"https://web.archive.org/web/20=
+010125061400id_/http://www.tempel.org/rb/index.html#FolderItem">FolderItem<=
+/a>
+   extension class.</li>
+  =20
+   <li>Want to make your apps and reusable classes more safe? Learn
+   about <a href=3D"https://web.archive.org/web/20010125061400id_/http://ww=
+w.tempel.org/rb/index.html#Exc">Exception Handling</a>.</li>
+  =20
+   <li>The <a href=3D"https://web.archive.org/web/20010125061400id_/http://=
+www.tempel.org/rb/index.html#MacAliasRecord">MacAliasRecord</a> plugin
+   provides a class for storing folder and file references in a file
+   (or resource). Very useful when <b>storing FolderItem
+   references</b> in your Preferences file.</li>
+  =20
+   <li>Identify Volumes and Attributes of files with the <a href=3D"https:/=
+/web.archive.org/web/20010125061400id_/http://www.tempel.org/rb/index.html#=
+FileMgr">FileMgr</a>
+   plugin.</li>
+  =20
+   <li>Need access to the full screen on a Mac? Hide the
+   <b>Menubar</b> and the <b>Control Strip</b> with this <a href=3D"https:/=
+/web.archive.org/web/20010125061400id_/http://www.tempel.org/rb/index.html#=
+HideMenubar">plugin</a>.</li>
+  =20
+   <li>Check out my <a href=3D"https://web.archive.org/web/20010125061400id=
+_/http://www.tempel.org/rb/index.html#AppFrame">Application Framework</a> i=
+f
+   you have to deal with multiple document windows.</li>
+  =20
+   <li><a href=3D"https://web.archive.org/web/20010125061400id_/http://www.=
+tempel.org/rb/index.html#Icons">Convert Icons</a> into Pictures.</li>
+  =20
+   <li>Get your things in order: A <a href=3D"https://web.archive.org/web/2=
+0010125061400id_/http://www.tempel.org/rb/index.html#SortInterface">Sort
+   class</a> using <b>QuickSort</b> and <b>BubbleSort</b>
+   techniques.</li>
+  =20
+   <li>Inquire many <b>Gestalt</b> Selectors on your Mac using the
+   <a href=3D"https://web.archive.org/web/20010125061400id_/http://www.temp=
+el.org/rb/index.html#Gestalt">Gestalt Plugin</a>.</li>
+  =20
+   <li>Need to do some Low-Level debugging? Invoke <a href=3D"https://web.a=
+rchive.org/web/20010125061400id_/http://www.tempel.org/rb/index.html#MacsBu=
+g">MacsBug</a>
+   from your application.</li>
+</ul>
+
+<h3>Links to other RB related web sites</h3>
+
+<ul>
+   <li>Read this <a href=3D"http://www.maui.net/~mauitom/RBTutorialOne.html=
+">new
+   tutorial</a> by Tom Cunningham if you are a total beginner in
+   programming and had even trouble using REALsoftware's
+   tutorial.</li>
+  =20
+   <li>See the <a href=3D"http://www.swssoftware.com/realnews/">REALnews</a=
+>
+   web site for <b>daily news</b> on REALbasic related material.</li>
+  =20
+   <li><a href=3D"http://bumppo.net/search/realbasic.html">Search the
+   REALbasic mailing list archives</a>. The best <b>FAQ</b> assembly
+   I can think of.</li>
+  =20
+   <li><a href=3D"http://bugbase.retrothreads.com/">Bugbase</a> is a
+   <b>bug database</b> concerning RB.</li>
+  =20
+   <li><a href=3D"http://home.swipnet.se/~w-42040/rb.html">TBFinder</a>
+   is a very handy tool to generate "Declare" statements if you want
+   to call Mac OS functions directly in your RB code.<br>
+   Plus, it contains a very flexible and smart way of storing a
+   <b>Preferences File</b>, written by me, that you may be able to
+   re-use. This disadvantage of it is that it can be used under Mac
+   OS only - no Windows support.</li>
+  =20
+   <li><a href=3D"http://www.vftp.net/RealBasic/Index.html">Project
+   Cuisinart</a> gives you many operations on your project files,
+   like reverting them to older RB versions, editing properties and
+   constants more easily, adding debugging output, and much
+   more.</li>
+  =20
+   <li>And don't forget to browse through the <a href=3D"https://web.archiv=
+e.org/web/20010125061400id_/http://www.tempel.org/rb/index.html#WebRing">RB
+   Web Ring</a> and the <a href=3D"https://web.archive.org/web/200101250614=
+00id_/http://www.tempel.org/rb/index.html#PluginsRing">RB Plugins Ring</a>
+   for a lot more sites.</li>
+</ul>
+
+<p><br>
+
+</p><hr width=3D"90%">
+
+<br>
+
+<h2>The Files</h2>
+
+<p>&nbsp;
+
+</p><h3><a name=3D"carbon"></a>Carbon versions (for Mac OS X)</h3>
+
+<blockquote>My <a href=3D"https://web.archive.org/web/20010125061400id_/htt=
+p://www.tempel.org/rb/index.html#Starter">Plugin Starter</a> has been updat=
+ed
+   for Carbon ouput.
+  =20
+   <p>Looking for <b>Carbon</b> versions of my plugins? I have not
+   done them yet, but Doug Holton has converted some of them.
+   <a href=3D"http://people.vanderbilt.edu/~doug.holton/basic/plugins/">Loo=
+k
+   for them here</a>.</p></blockquote>
+
+<h3><a name=3D"RBpa"></a>RBplugin Plunger (Mac OS, PPC only)</h3>
+
+<blockquote>(formerly known as RB Plugin Analyser )
+  =20
+   <p>Current Version: 1.2 (contributors: Bj=F6rn
+   Eir=EDksson, Alfred van Hoek, T.T.)
+  =20
+   </p><p>Open any PPC-enabled RB Plugin with this tool to see what
+   Controls, Classes and Methods it provides.
+  =20
+   </p><p>This code is <u>Open Source</u>, which means that you are
+   invited to enhance the tool if you feel the need, and return the
+   enhancements to me, so that I can make them available to everyone.
+  =20
+   </p><p><a href=3D"https://web.archive.org/web/20010125061400id_/http://w=
+ww.tempel.org/ftp/pub/REALbasic/RBpluginPlunger.sit.bin">Download
+   here</a> (792 KB)
+  =20
+   </p><p>Note: There's also a far more <b>improved</b> version (2.0a6),
+   which is available on <a href=3D"http://www.einhugur.com/Html/freedl.htm=
+l">Bj=F6rn's
+   web site</a>. I will eventually update it here on my web site,
+   too, but I am currently too busy with other work.</p></blockquote>
+
+<h3><a name=3D"Starter"></a>Plugin Starter (Mac OS, Windows)</h3>
+
+<blockquote>If you want to write your own plugins, you may use this
+   skeleton. It requires CodeWarrior Pro 4 or higher. It supports
+   68K, PowerPC, Carbon and Windows x86 code generation.
+  =20
+   <p>Updates:
+  =20
+   </p><ul>
+      <li>Jan 18, 2000: Verified that RB 2.1a25 has fixed the bug
+      that prevented x86 plugins from working in Windows builds.</li>
+     =20
+      <li>Jan 28, 2000: Now calls init code for static C++ objects
+      and globals.</li>
+     =20
+      <li>Feb 6, 2000: Does not require "MPW C calling convention"
+      enabled globally any more; added more samples for handling
+      Boolean and Double types; easened the update to CW Pro 5.</li>
+     =20
+      <li>Jan 22, 2001: Added support for Carbon output, proper C++
+      object initialization and destruction, x-platform cleanup code
+      and an Event Handler example. Removed support for CW Pro 2 -
+      Pro 4 is minimum now.</li>
+   </ul>
+  =20
+   <p><a href=3D"https://web.archive.org/web/20010125061400id_/http://www.t=
+empel.org/ftp/pub/REALbasic/TTsPluginStarter.sit.bin">Download
+   here</a> (70 KB), complete with source code, documentation and
+   sample code.</p></blockquote>
+
+<h3><a name=3D"Collection"></a>Collection Extension (Mac OS,
+Windows)</h3>
+
+<blockquote>This plugin adds a method to read back the Keys that are
+   stored in a Collection object, similar to the available "Item"
+   method that returned the values from a Collection.
+  =20
+   <p>The plugin works with Mac OS (68K, PPC) and Windows (x86).
+  =20
+   </p><p><a href=3D"https://web.archive.org/web/20010125061400id_/http://w=
+ww.tempel.org/ftp/pub/REALbasic/TTsCollectionExtension.sit.bin">Download
+   here</a> (50 KB), complete with source code, documentation and
+   testing code.</p></blockquote>
+
+<h3><a name=3D"BitOps"></a>Bit Ops (Mac OS, Windows)</h3>
+
+<blockquote>This plugin adds methods for many useful bitwise
+   operations on Integers.
+  =20
+   <p>It also provides a new class <b>TTsBitSet</b> that handles
+   large arrays of bits.
+  =20
+   </p><p>Here's an incomplete list of the provided functions: And, Or,
+   XOr, Not, Nor, Nand, Shift, Rotate, Clone, Copy, Compare, Find.
+  =20
+   </p><p>The plugin should work under Mac OS (68K, PPC) as well as under
+   Windows (x86).
+  =20
+   </p><p>Updated Feb 6, 2000, to v1.0.1: The NOR and NAND operations did
+   not work correctly in v1.0.
+  =20
+   </p><p><a href=3D"https://web.archive.org/web/20010125061400id_/http://w=
+ww.tempel.org/ftp/pub/REALbasic/TTsBitOpsPlugin.sit.bin">Download
+   here</a> (70 KB), complete with source code, a brief documentation
+   and testing code.</p></blockquote>
+
+<h3><a name=3D"CRC"></a>CRC Calculation (Mac OS, Windows)</h3>
+
+<blockquote>This plugin adds methods for calculating CRCs
+   (<b>checksums</b>) in 16 and 32 bit, as well as variably from 16
+   to 64 bit.
+  =20
+   <p>Works under Mac OS (68K, PPC) as well as under Windows (x86).
+  =20
+   </p><p><a href=3D"https://web.archive.org/web/20010125061400id_/http://w=
+ww.tempel.org/ftp/pub/REALbasic/TTsCRCPlugin.sit.bin">Download
+   here</a> (64 KB), complete with source code, documentation and
+   sample code.</p></blockquote>
+
+<h3><a name=3D"FolderItem"></a>FolderItem Extension (Mac OS only)</h3>
+
+<blockquote>Adds the following methods to the built-in FolderItem
+   class:
+  =20
+   <ul>
+      <li>Launch (inFront as Boolean) as Boolean</li>
+     =20
+      <li>OpenWithApp (app as FolderItem, inFront as Boolean) as
+      Boolean</li>
+     =20
+      <li>GetCreatorApp () as FolderItem</li>
+     =20
+      <li>GetCreatorApp (creatorCode as String) as FolderItem</li>
+   </ul>
+  =20
+   <p>Download the <a href=3D"https://web.archive.org/web/20010125061400id_=
+/http://www.tempel.org/ftp/pub/REALbasic/TT's%20FolderItem%20Extension.sit"=
+>plugin</a>
+   (37 KB), complete with source code, documentation and sample code.</p></=
+blockquote>
+
+<h3><a name=3D"EventMonitor"></a>TTsEventMonitor Class (Mac OS only)</h3>
+
+<blockquote>This plugin lets you monitor events that your app
+   receives, like key presses, mouse clicks and idle events. You can
+   even modify or filter those events entirely.
+  =20
+   <p>For example, you can detect <b>Function Keys</b> because their
+   <b>Keycode</b> is available to you via this plugin now. You can
+   also detect and Key presses in conjunction with the <b>Command
+   Key</b> before RB processes them any further, allowing you to
+   support Cmd-Cursor combinations and others that are not included
+   as menu bar shorcuts.
+  =20
+   </p><p><i>Updated Aug 10:</i> Added a demo project that lists all
+   events the plugin receives.
+  =20
+   </p><p>Download the <a href=3D"https://web.archive.org/web/2001012506140=
+0id_/http://www.tempel.org/ftp/pub/REALbasic/TT's%20EventMonitor%20Plugin.s=
+it">plugin</a>
+   (41 KB), complete with source code, documentation and sample code.</p></=
+blockquote>
+
+<h3><a name=3D"MacAliasRecord"></a>MacAliasRecord Class (Mac OS
+only)</h3>
+
+<blockquote>Do you need to save the location of a <b>FolderItem</b>
+   in your <b>Preferences</b> file and retrieve that item later again
+   when your app is relaunched?
+  =20
+   <p>Do you currently solve this by saving the <b>AbsolutePath</b>
+   property of the FolderItem?
+  =20
+   </p><p>Here's why you want to use this class for this task:
+  =20
+   </p><p>If the user moves or renames the item, the saved absolute path
+   will not be valid any more, and the item would be lost. However,
+   using the MacAliasRecord to save and retrieve a FolderItem
+   location, you will most likely be able keep the reference to the
+   item, similar to a Alias file that you can create in the Finder.
+   As a bonus, you can even locate items on removable and to network
+   volumes, providing the user with the login dialog to the server.
+  =20
+   </p><p>Download the <a href=3D"https://web.archive.org/web/2001012506140=
+0id_/http://www.tempel.org/ftp/pub/REALbasic/TT's%20AliasRecord.sit">plugin=
+</a>
+   (50 KB), complete with source code, documentation and sample code.</p></=
+blockquote>
+
+<h3><a name=3D"MemoryBlock"></a>MemoryBlock Extension (Mac OS,
+Windows)</h3>
+
+<blockquote>Current version: 1.3 (Jan 18, 2000)
+  =20
+   <p>Adds the following methods and properties to the built-in
+   MemoryBlock class:
+  =20
+   </p><ul>
+      <li>Size as Integer</li>
+     =20
+      <li>Address (offset as Integer) as Integer</li>
+     =20
+      <li>FSSpec (offset as Integer) as FolderItem
+      (<font color=3D"#FF0000">new in v1.2</font>, Mac OS only)</li>
+     =20
+      <li>Bool (offset as Integer) as Boolean
+      (<font color=3D"#FF0000">new in v1.2</font>)</li>
+     =20
+      <li>OSType (offset as Integer) as String
+      (<font color=3D"#FF0000">new in v1.2</font>)</li>
+     =20
+      <li>DoubleValue (offset as Integer) as Double</li>
+     =20
+      <li>GetString (offset as Integer, length as Integer) as
+      String</li>
+     =20
+      <li>SetString (str as String, offset as Integer)</li>
+     =20
+      <li>CopyBytes (srcOfs as Integer, numBytes as Integer, destOfs
+      as Integer)</li>
+     =20
+      <li>CopyBytes (srcOfs as Integer, numBytes as Integer, destBlk
+      as MemoryBlock, destOfs as Integer)</li>
+     =20
+      <li>CopyBytesToMacPtr (srcOfs as Integer, numBytes as Integer,
+      destPtr as Integer)</li>
+     =20
+      <li>CopyBytesFromMacPtr (srcPtr as Integer, numBytes as
+      Integer, destOfs as Integer)</li>
+     =20
+      <li>CopyBytesToMacHandle (srcOfs as Integer, numBytes as
+      Integer, destPtr as Integer)</li>
+     =20
+      <li>CopyBytesFromMacHandle (srcPtr as Integer, numBytes as
+      Integer, destOfs as Integer)</li>
+   </ul>
+  =20
+   <p>New in v1.3: Works with <b>Windows</b> now, too (requires RB
+   2.1a24 or later).
+  =20
+   </p><p>Download the <a href=3D"https://web.archive.org/web/2001012506140=
+0id_/http://www.tempel.org/ftp/pub/REALbasic/TTsMemoryBlockExtension.sit.bi=
+n">plugin</a>
+   (56 KB), complete with source code, documentation and sample code.</p></=
+blockquote>
+
+<h3><a name=3D"AppFrame"></a>Application Framework</h3>
+
+<blockquote>Do you need a <b>starting point</b> for a application
+   that uses multiple document windows?
+  =20
+   <p>Do you want to maintain a menu that shows a list of the open
+   windows?
+  =20
+   </p><p>Do you have documents that you need to save when closed and
+   thus need to write code that asks the user whether he wants to
+   save, discard or cancel?
+  =20
+   </p><p>Then get <a href=3D"https://web.archive.org/web/20010125061400id_=
+/http://www.tempel.org/ftp/pub/REALbasic/TTs_App_Frame.sit">TT's
+   App Frame</a> (11 KB). It is a RB1 compatible project with
+   documented source code that takes care of all this for you.</p></blockqu=
+ote>
+
+<h3><a name=3D"Icons"></a>Icon To Picture (Mac OS only)</h3>
+
+<blockquote>Convert Icons (1, 4, 8 bit depths only, no 32 bit support
+   yet!) from anywhere (not only from resources) into Pictures with
+   this <a href=3D"https://web.archive.org/web/20010125061400id_/http://www=
+.tempel.org/ftp/pub/REALbasic/TT's%20Icons-Plugin.sit">plugin</a>
+   (26 KB).
+  =20
+   <p><b>Note</b>: If you need to get icons of files and olders, just
+   like the Finder shows them, I recommend taking a look at <a href=3D"http=
+://hp.vector.co.jp/authors/VA009277/rb/index_e.htm">Micono's
+   Icon plugins</a>, particularly his <a href=3D"http://hp.vector.co.jp/aut=
+hors/VA009277/rb/plugins/rbgeticon_e.htm">GetFinderIcon</a>,
+   and to Doug Holton's <a href=3D"http://people.vanderbilt.edu/~doug.holto=
+n/basic/plugins/">FileIcon
+   Plugin</a> (Doug's comes with source code for the plugin, while
+   Micono's seems easier to use).</p></blockquote>
+
+<h3><a name=3D"Exc"></a>Exception Handling</h3>
+
+<blockquote>This is a text I wrote on a nice sunday morning (March
+   14, 99) in about 2 hours to explain how to make your code safer
+   using Exception Handling.
+  =20
+   <p><b><i>Updated on July 26, 99:</i></b> The example for using a
+   Constructor has been corrected.
+  =20
+   </p><p><a href=3D"https://web.archive.org/web/20010125061400id_/http://w=
+ww.tempel.org/rb/exceptionhandling.html">This page</a> shows the text,
+   then you can save it to your hard disk if you wish.
+  =20
+   </p><p><img src=3D"https://web.archive.org/web/20010125061400id_/http://=
+www.tempel.org/pictures/j-flag22x14.GIF" alt=3D"J-flag" width=3D"22" height=
+=3D"14" border=3D"1" align=3D"top">
+   Thanks to Ryo Amano, there's also a <a href=3D"http://member.nifty.ne.jp=
+/Amano/software/docs.html">Japanese
+   version</a> of this text available.</p></blockquote>
+
+<h3><a name=3D"SortInterface"></a>Array &amp; ListBox Sorting</h3>
+
+<blockquote>A class that implements <b>QuickSort</b> and
+   <b>BubbleSort</b>. It can sort any type of data: You need to
+   subclass this class and then implement a Compare and a Swap
+   function. The Sort class does the rest for you. It comes with
+   lightly documented source and demonstration code.
+  =20
+   <p>There are two versions with slightly different ways of how to
+   use the class:</p></blockquote>
+
+<ul>
+   <li><a href=3D"https://web.archive.org/web/20010125061400id_/http://www.=
+tempel.org/ftp/pub/REALbasic/Array_ListBox_Sorting_RB2.sit">This
+   advanced version</a> (20 KB) requires <b>RB version 2</b> and uses
+   a new feature of RB2: a <i>Class Interface</i>.
+  =20
+   <p><b><i>Updated Apr 8, 99</i></b>:
+  =20
+   </p><ul>
+      <li>Shows how to <b>override</b> the <b>default sorting</b> of
+      <b>ListBox</b> columns</li>
+     =20
+      <li><b>Faster</b> ListBox sorting by using a smart "caching"
+      mechanism.</li>
+     =20
+      <li>Contains another alternative Class Interface, where the
+      sorted items are objects that have a <i>order/value</i>
+      property.</li>
+     =20
+      <li>Comes now with three sample projects (two complex, one
+      simple for easy inclusion in your projects).</li>
+   </ul>
+  =20
+   <p>&nbsp;</p></li>
+  =20
+   <li><a href=3D"https://web.archive.org/web/20010125061400id_/http://www.=
+tempel.org/ftp/pub/REALbasic/SortInterface(RB1).sit">This
+   older version</a> (13 KB) can be opened in all REALbasic versions
+   since 1.0.
+  =20
+   <p>Updated Feb 26, 99: Doesn't reshuffle lines with equal contents
+   any more.</p></li>
+</ul>
+
+<h3><a name=3D"CatSearch"></a>Searching for certain files on a Mac OS
+volume</h3>
+
+<blockquote>This plugin implements the <b>PBCatSearch</b> function of
+   the Mac OS File Manager. This is a very fast routine to find
+   specific types of files on a volume. The MacOS tool
+   <b>Sherlock</b> (aka <b>Find File</b>) uses this function to do
+   its quick search on volumes.
+  =20
+   <p>This plugin also shows how you can allow your RB app to access
+   complex data structures inside the plugin without having to create
+   a REALbasic Control or Class, something that is not yet possible
+   for Windows plugins (the trick is that you create a temporary
+   structure inside the plugin and then provide accessor functions to
+   get and set the individual elements of that structure).
+  =20
+   </p><p>Current Version: 2.1 (April 22, 2000)
+  =20
+   </p><p>New in 2.1 (since 2.0.1):
+  =20
+   </p><ul>
+      <li>Updated for REALbasic v2.1 (attention: does not work
+      properly with older versions as a 68K plugin any more!)</li>
+     =20
+      <li>Updated some documentation (Set... methods).</li>
+   </ul>
+  =20
+   <p><a href=3D"https://web.archive.org/web/20010125061400id_/http://www.t=
+empel.org/ftp/pub/REALbasic/TTsCatSearchPlugin.sit.bin">Download</a>
+   (56 KB) this plugin with Source code (both C and REALbasic code)</p></bl=
+ockquote>
+
+<h3><a name=3D"FileMgr"></a>Mac OS File Manager support</h3>
+
+<blockquote>This plugin gives you access to some functions of the Mac
+   OS File Manager, such as relating RB's FolderItems to a <b>Volume
+   Reference Number</b> (VRefNum), checking for Server volumes,
+   getting &amp; setting more information about files (<b>File Flags
+   and Attributes</b>) and getting, creating and resolving
+   <b>FileIDs</b> &amp; <b>DirIDs</b>.
+  =20
+   <p>One of the functions is particularly helpful: RB 2.0 (and
+   before) crashes when you open and then again close the <b>resource
+   fork</b> of a file that was already opened by you or by the RB
+   IDE. To prevent that, you can use <b>IsResourceForkOpen</b> before
+   you open the resource fork and then do open it (and tell the user
+   that you can't do it).
+  =20
+   </p><p><b><i>Updated July 4, 99 to version 1.2:</i></b>
+  =20
+   </p><ul>
+      <li>Added two routines to create a FolderItem from Mac OS
+      file/folder specs (NewFolderItemFromFSSpec).</li>
+   </ul>
+  =20
+   <p><a href=3D"https://web.archive.org/web/20010125061400id_/http://www.t=
+empel.org/ftp/pub/REALbasic/TT's%20FileMgr-Plugin.sit">Download</a>
+   (30 KB) this plugin with Source code (both C and REALbasic code)</p></bl=
+ockquote>
+
+<h3><a name=3D"HideMenubar"></a>Hiding the Menu Bar and the Control Strip
+Bar (Mac OS only)</h3>
+
+<blockquote>This plugin allows you to hide the <b>Menu Bar</b> and
+   anything else that would obscure the screen if you wanted to draw
+   on the full screen, like the <b>rounded</b> <b>corners</b>, the
+   <b>Application Switcher</b> floating window and the <b>Control
+   Strip</b> bar.
+  =20
+   <p>Additionally, you can show and hide the <b>Control Strip</b>
+   bar individually.
+  =20
+   </p><p>Two other valuable features of this plugin are:
+  =20
+   </p><ul>
+      <li>Automatically restores the menu bar when the application is
+      brought to the background or when the application quits
+      unexpectedly (due to a crash).</li>
+     =20
+      <li>It is <b>Mac OS 8.5-savvy</b>, which means that it uses the
+      new Mac OS 8.5's Menu Manager functions for hiding the menu
+      bar, as suggested by Apple in the 8.5's Technote #1142.</li>
+   </ul>
+  =20
+   <p>Current Version: 1.1.1 (June 1, 99). Features:
+  =20
+   </p><blockquote><ul>
+         <li>Now includes the (previously missing) files from
+         <b>HideMenubarEtc</b>.</li>
+        =20
+         <li>updated for REALbasic Version 2</li>
+        =20
+         <li>fixed a crashing bug with OS 8.5, another one with built
+         apps</li>
+        =20
+         <li>now you can have a plain background that covers the
+         whole screen, hiding all windows and icons of other
+         applications.</li>
+      </ul>
+   </blockquote>
+  =20
+   <p><a href=3D"https://web.archive.org/web/20010125061400id_/http://www.t=
+empel.org/ftp/pub/REALbasic/TT's%20HideMenubar-Plugin.sit">Download</a>
+   (49 KB) this plugin with Source code (both C and REALbasic code)</p></bl=
+ockquote>
+
+<h3><a name=3D"Gestalt"></a>Gestalt Manager support (Mac OS only)</h3>
+
+<blockquote>Gestalt codes in MacOS are global settings, similar to
+   environment variables in Unix and DOS.
+  =20
+   <p>Many applications and system extensions install a so-called
+   Gestalt Selector that give other apps and the user some
+   information about their state.
+  =20
+   </p><p>As an example, Mac OS always installs a Gestalt Selector with
+   code "sysv", which returns the currently running system version.
+  =20
+   </p><p>Current Version: 1.0 (March 8, 99)
+  =20
+   </p><p>Note: This plugin becomes obsolete in RB 2.0.1, which offers a
+   built-in function for this task ("System.Gestalt").
+  =20
+   </p><p><a href=3D"https://web.archive.org/web/20010125061400id_/http://w=
+ww.tempel.org/ftp/pub/REALbasic/TT's%20Gestalt-Plugin.sit">Download</a>
+   (23 KB) this plugin with Source code (both C and REALbasic code)</p></bl=
+ockquote>
+
+<h3><a name=3D"MacsBug"></a>Entering Low-Level debuggers like MacsBug
+(Mac OS only)</h3>
+
+<blockquote>Do you know what MacsBug is? If not, forget about this
+   plugin or read about it on the <a href=3D"http://developer.apple.com/too=
+ls/debuggers/MacsBug/index.html">MacsBug
+   page</a> at Apple.
+  =20
+   <p>If you have MacsBug installed, this plugin lets you enter
+   MacsBug by the debugger traps <b>Debugger()</b> and
+   <b>DebugStr()</b>. This can come handy if you need to track down
+   some low-level stuff within your RB app, like tracing the order of
+   events.
+  =20
+   </p><p><b>Note:</b> You only need this plugin for RB version 1.
+   Version 2 (actually v2.0.2) gives you a better way to call the
+   Debugger by using the following declaration inside your methods:
+  =20
+   </p><blockquote><pre>Declare Sub Debugger Lib "InterfaceLib" Inline68K("=
+A9FF")
+Declare Sub DebugStr Lib "InterfaceLib" (msg as PString) Inline68K("ABFF")
+      </pre></blockquote>
+  =20
+   <p><a href=3D"https://web.archive.org/web/20010125061400id_/http://www.t=
+empel.org/ftp/pub/REALbasic/TT's%20MacsBug-Plugin.sit">Download</a>
+   (22 KB) this plugin with Source code (both C and REALbasic code),
+   current Version: 1.0 (March 8, 99)
+  =20
+   </p><p>&nbsp;</p></blockquote>
+
+<p align=3D"center">
+
+</p><hr width=3D"90%">
+
+<a name=3D"PluginsRing"></a>
+
+<h3 align=3D"center">REALbasic Plugins webring - find more plugins
+here</h3>
+
+<p align=3D"center">This <a href=3D"http://www.polar.icestorm.com/einhugur/=
+pluginring.html">REALbasic
+Plugin Webring</a> site is owned by <a href=3D"mailto:tt@tempel.org">Thomas
+Tempelmann</a>.<br>
+<br>
+[ <a href=3D"http://www.webring.org/cgi-bin/webring?ring=3Drbplugins;id=3D8=
+;prev" target=3D"_top">Prev</a>
+| <a href=3D"http://www.webring.org/cgi-bin/webring?ring=3Drbplugins;id=3D8=
+;next" target=3D"_top">Next</a>
+| <a href=3D"http://www.webring.org/cgi-bin/webring?random;ring=3Drbplugins=
+" target=3D"_top">Random</a>
+| <a href=3D"http://www.webring.org/cgi-bin/webring?ring=3Drbplugins;id=3D8=
+;next5" target=3D"_top">Next
+5</a> | <a href=3D"http://www.webring.org/cgi-bin/webring?ring=3Drbplugins;=
+list" target=3D"_top">List
+Sites</a> ]<br>
+<br>
+
+</p><hr width=3D"90%">
+
+<a name=3D"WebRing"></a>
+
+<h3 align=3D"center">REALbasic webring - links to many other RB
+users</h3>
+
+<p align=3D"center"><img src=3D"https://web.archive.org/web/20010125061400i=
+d_/http://www.tempel.org/pictures/rbwebring.gif" width=3D"268" height=3D"82=
+" border=3D"0" align=3D"bottom"><br>
+<font size=3D"-1">This </font><a href=3D"http://www.geocities.com/sunsetstr=
+ip/7933/cb_ring.html"><font size=3D"-1">REALbasic
+Webring</font></a><font size=3D"-1"> site is owned by </font><a href=3D"mai=
+lto:rb@tempel.org"><font size=3D"-1">Thomas
+Tempelmann</font></a><font size=3D"-1"><br>
+</font><br>
+[ <a href=3D"http://www.webring.org/cgi-bin/webring?ring=3Dxbasic;id=3D50;p=
+rev">Previous</a>
+| <a href=3D"http://www.webring.org/cgi-bin/webring?ring=3Dxbasic;id=3D50;n=
+ext">Next</a>
+| <a href=3D"http://www.webring.org/cgi-bin/webring?ring=3Dxbasic;id=3D50;n=
+ext5">Next
+5 Sites</a> | <a href=3D"http://www.webring.org/cgi-bin/webring?ring=3Dxbas=
+ic;random">Random
+Site</a> | <a href=3D"http://www.webring.org/cgi-bin/webring?ring=3Dxbasic;=
+list">List
+Sites</a> ]
+
+</p><p>
+
+</p><hr width=3D"90%">
+
+<h3 align=3D"center">Links to my other pages</h3>
+
+<p align=3D"center"><a href=3D"http://www.tempel.org/">Homepage</a>
+
+</p><p align=3D"center"><a href=3D"http://www.tempel.org/mac/">Macintosh us=
+er
+tools</a>
+
+</p><p align=3D"center"><a href=3D"http://www.tempel.org/macdev/">Macintosh
+developing tools and information</a>
+
+</p><p align=3D"center">Questions, comments? Write to <a href=3D"mailto:rb@=
+tempel.org">rb@tempel.org
+</a>&nbsp;
+
+</p><address align=3D"center">
+
+<hr width=3D"90%">
+
+Thomas Tempelmann, last update: Jan 22, 2001</address>
+
+
+
+</body></html>
+------MultipartBoundary--hOdd77CVb1eAVD33f9T3mV20zfRsp2Pbi09qpc1Tty----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://web.archive.org/web/20010125061400id_/http://www.tempel.org/pictures/j-flag22x14.GIF
+
+R0lGODdhFgAOAPMAAP///+/Gxs5CQrUAAL+/vwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAACwAAAAAFgAOAAAEKRDISau9OOuNgxiDEHBTAJ7DSH5oSALt+cbgy6LCa7Yq6YGil3BI5EQA
+ADs=
+
+------MultipartBoundary--hOdd77CVb1eAVD33f9T3mV20zfRsp2Pbi09qpc1Tty----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://web.archive.org/web/20010125061400id_/http://www.tempel.org/pictures/rbwebring.gif
+
+R0lGODlhDAFSAPcAAAAAADMAAGYAAJkAAMwAAP8AAAAzADMzAGYzAJkzAMwzAP8zAABmADNmAGZm
+AJlmAMxmAP9mAACZADOZAGaZAJmZAMyZAP+ZAADMADPMAGbMAJnMAMzMAP/MAAD/ADP/AGb/AJn/
+AMz/AP//AAAAMzMAM2YAM5kAM8wAM/8AMwAzMzMzM2YzM5kzM8wzM/8zMwBmMzNmM2ZmM5lmM8xm
+M/9mMwCZMzOZM2aZM5mZM8yZM/+ZMwDMMzPMM2bMM5nMM8zMM//MMwD/MzP/M2b/M5n/M8z/M///
+MwAAZjMAZmYAZpkAZswAZv8AZgAzZjMzZmYzZpkzZswzZv8zZgBmZjNmZmZmZplmZsxmZv9mZgCZ
+ZjOZZmaZZpmZZsyZZv+ZZgDMZjPMZmbMZpnMZszMZv/MZgD/ZjP/Zmb/Zpn/Zsz/Zv//ZgAAmTMA
+mWYAmZkAmcwAmf8AmQAzmTMzmWYzmZkzmcwzmf8zmQBmmTNmmWZmmZlmmcxmmf9mmQCZmTOZmWaZ
+mZmZmcyZmf+ZmQDMmTPMmWbMmZnMmczMmf/MmQD/mTP/mWb/mZn/mcz/mf//mQAAzDMAzGYAzJkA
+zMwAzP8AzAAzzDMzzGYzzJkzzMwzzP8zzABmzDNmzGZmzJlmzMxmzP9mzACZzDOZzGaZzJmZzMyZ
+zP+ZzADMzDPMzGbMzJnMzMzMzP/MzAD/zDP/zGb/zJn/zMz/zP//zAAA/zMA/2YA/5kA/8wA//8A
+/wAz/zMz/2Yz/5kz/8wz//8z/wBm/zNm/2Zm/5lm/8xm//9m/wCZ/zOZ/2aZ/5mZ/8yZ//+Z/wDM
+/zPM/2bM/5nM/8zM///M/wD//zP//2b//5n//8z//////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAANcALAAAAAAMAVIA
+AAj+AK8JHEiwoMGDCBMqXMiwocOHECNKnEixosWLGDNq3Mixo8ePIEOKHEmypMmTIlkFWrECAIAV
+VgKxQkmzps2bOK+xsgJTpkCVPK3MzEm0qNGjDFf6RBgoJtKnUKPSbDpU4c5AUrNq3XqRqkGXBq9y
+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
+tsiKAQEAADs=
+
+------MultipartBoundary--hOdd77CVb1eAVD33f9T3mV20zfRsp2Pbi09qpc1Tty------

@@ -1,0 +1,288 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://web.archive.org/web/20001217104300id_/http://www.thsmith.dircon.co.uk/xmlengine/index.html
+Subject: XML Engine - XML for the rest of us
+Date: Fri, 26 May 2023 06:03:05 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--rNAPidmZAXnGlKgb5noeFVWRwivwxca0uWG7JRyCam----"
+
+
+------MultipartBoundary--rNAPidmZAXnGlKgb5noeFVWRwivwxca0uWG7JRyCam----
+Content-Type: text/html
+Content-ID: <frame-158CC2FC393B216AD792BE92C940DA66@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://web.archive.org/web/20001217104300id_/http://www.thsmith.dircon.co.uk/xmlengine/index.html
+
+<html><!--This file created 19/10/2000 7:51 pm by Claris Home Page version =
+3.0--><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3Dwindows-1252"><base target=3D"_top"><title>XML Engine - XML for the rest=
+ of us</title>
+<meta name=3D"GENERATOR" content=3D"Claris Home Page 3.0"></head><body bgco=
+lor=3D"#EEF2F5" alink=3D"#0000FF" vlink=3D"#0000FF" class=3D"usual"><x-clar=
+is-window top=3D"96" bottom=3D"742" left=3D"17" right=3D"795"><x-claris-tag=
+view mode=3D"minimal"><link rel=3D"STYLESHEET" type=3D"text/css" href=3D"ht=
+tps://web.archive.org/web/20001217104300id_/http://www.thsmith.dircon.co.uk=
+/cssmain.css"><p><font size=3D"-2" face=3D"Verdana,Times,Helvetica"><table =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"8"><tbody><tr><td><p><table b=
+order=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td bgcolor=3D"#=
+E0E0E0"><p><font color=3D"#000000"><table border=3D"0" cellspacing=3D"1" ce=
+llpadding=3D"2"><tbody><tr><td width=3D"25%"><p></p></td><td width=3D"75%" =
+bgcolor=3D"#EEF2F5"><p align=3D"right"><table border=3D"0" cellspacing=3D"0=
+" cellpadding=3D"2" width=3D"40%"><tbody><tr><td valign=3D"top"><h3>XML mad=
+e easy.</h3>
+</td></tr></tbody></table></p></td></tr><tr><td valign=3D"top" width=3D"25%=
+" bgcolor=3D"#EEF2F5"><h4>&nbsp;</h4>
+<p>&nbsp;<img src=3D"https://web.archive.org/web/20001217104300id_/http://w=
+ww.thsmith.dircon.co.uk/pictures/xmlengineicon.gif" width=3D"32" height=3D"=
+32" x-claris-useimagewidth=3D"" x-claris-useimageheight=3D"" border=3D"0" a=
+lign=3D"bottom"></p>
+<h4><a href=3D"https://web.archive.org/web/20001217104300id_/http://www.ths=
+mith.dircon.co.uk/programmer/downloads/xmlengine.sit" class=3D"plain">XML
+Engine</a> v1.05</h4>
+<p>=A9 Theodore H.Smith, July 2000</p>
+<p><br>Prices:<br>
+Non-Commercial: $50<br>
+Commercial: $125<br>
+Upgrade: $80<br>
+<br>Royalty free. All licences are world wide
+for your company.<br>
+<br>Dev-support offered, including helping you
+get used to how XML Engine works.</p>
+<p>Commercial licence gives you access to
+the Source code for compiling into your
+own Applications. Distributing the source
+code there is no licence for.</p>
+<p>Non-commerical licence is fine for apps
+that are intended to be commercial, but
+haven't yet been sold. If you want to sell
+any programs that use XML Engine, you will
+have to upgrade. This makes it possible to
+preview XML Engine with the Non-Commercial
+version.</p>
+</td><td valign=3D"top" width=3D"75%" bgcolor=3D"#EEF2F5"><p>&nbsp;</p>
+<p>Parse, render, analyse, create and
+alter XML. Want to make a Mac app that
+does any of this with XML? You can make it
+with REALbasic and XML Engine. XML Engine
+is powerful and simple.</p>
+<p>Its Macintosh XML management made
+easy.&nbsp;XML Engine can do all of the
+above with HTML also.</p>
+<p><br>Features:</p>
+<ul><li>Render and parse is fast.</li>
+<li>Can render and parse both HTML and
+XML.</li>
+<li>Support for comments
+(&lt;!--commented text--&gt;), Entities
+(&amp;uuml;), empty tags, processing
+instructions, !Doctype, CData different
+white space parse modes and
+xml:space.</li>
+<li>Manipulation: Sorting, "taking the
+middle plate out of a stack of plates",
+moving, insertion, replace function
+that returns a list of all copies of
+the replace XMLElement, searching,
+listing all elements, searching for
+string data only, and a large range of
+other XML manipulation methods
+included.</li>
+<li>Altering, adding, returning and
+deletion of element attributes.</li>
+<li>Optional parsing of registered
+elements only, treating them as a
+string to save RAM.</li>
+<li>Elegant design.</li>
+<li>Parse errors are logged into a
+string for you to check later.</li>
+<li>XML "well-formedness" checking.
+Lists any "badly formed" source found
+in the error string. Optionally escapes
+from parsing at the first error found,
+otherwise recovers and continues
+parsing.</li>
+<li>XML Tree structure viewer, views in
+a hierarchical listbox the XML
+Structure, allowing you to view, edit
+the structure, and find any XML source
+errors.</li>
+</ul><p>&nbsp;</p>
+<p>&nbsp;Version 1.05 adds some new
+methods, much improved internal
+documentation, improved demo code, and new
+Parse options.</p>
+<p>Coming up features:</p>
+<ul><li>Full XML Schema support.</li>
+</ul><p>&nbsp;<font color=3D"#FF3300"><strong>Developer
+Support</strong></font></p>
+<ul><li>If you buy XML Engine, I will help
+you in your projects that use this
+class if you need me to. If you want
+extra features, ask me, and I will add
+them for free. As long as the requests
+are related to XMLElement use
+generally, or otherwise sensible.</li>
+</ul><p>&nbsp;</p>
+<p>XML Engine is composed of XMLElement,
+HTMLManager, XMLManager, XMLEntities and
+XMLText. HTMLManager comes with many more
+methods suitable for HTML only uses, such
+as color &lt;-&gt; string conversion, text
+&lt;-&gt; html, url &lt;-&gt; Mac Ascii,
+and more.</p>
+<p>The classes give you around 100 methods
+to handle your XML and HTML.</p>
+<p>&nbsp;</p>
+<p><br><a href=3D"https://web.archive.org/web/20001217104300id_/http://www.=
+thsmith.dircon.co.uk/programmer/downloads/xmlengine.sit">Download
+demo</a> - The demo is at version 1.05</p>
+<p>&nbsp;</p>
+<p>Ordering: you can buy it from Kagi at
+<a href=3D"http://order.kagi.com/?UPV&amp;S" class=3D"plain">http://order.k=
+agi.com/?UPV&amp;S</a>.
+Please email me, "Theo" &lt;<a href=3D"mailto:delete@softhome.net" class=3D=
+"plain">delete@softhome.net</a>&gt;
+about buying it. I will email you the
+classes, and you may need some help
+getting used to the classes. Or you may
+have extra needs that it currently can't
+do, which I could implement for you.</p>
+</td></tr><tr><td valign=3D"top" width=3D"25%" bgcolor=3D"#EEF2F5"><p>&nbsp=
+;</p>
+<p>Applications made with XML Engine</p>
+</td><td valign=3D"top" width=3D"75%" bgcolor=3D"#EEF2F5"><p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src=3D"https://web.archive.org/web/20=
+001217104300id_/http://www.thsmith.dircon.co.uk/pictures/newsxpressicon.gif=
+" width=3D"32" height=3D"32" x-claris-useimagewidth=3D"" x-claris-useimageh=
+eight=3D"" border=3D"0" align=3D"bottom">News
+XPress by me. Visit the <a href=3D"https://web.archive.org/web/200012171043=
+00id_/http://www.thsmith.dircon.co.uk/newsxpress/index.html" class=3D"plain=
+">News
+XPress</a> web section to learn more about
+News XPress. News XPress is a News feed
+and weblog viewer that reads XML based
+data. It can also save newsfeeds in XML
+RDF format. I found making the XML side a
+complete simplicity with XML Engine. The
+hardest part by far of making News XPress
+was the interface. News XPress can read a
+lot of XML formats. It took me just 10
+minuites to add support for the last
+format to be added (Moreover), once I had
+written the rest of the client to read the
+other formats. Saving the data was written
+in about 10 minuites also. Working on the
+interface took many days!</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p></p></td></tr><tr><td colspan=3D"2" width=3D"100%" bgcolor=3D"#EEF2F5"><=
+p>&nbsp;</p>
+<p align=3D"right">The classes for sale are
+not Open Source.</p>
+</td></tr></tbody></table></font></p></td></tr></tbody></table></p><p><tabl=
+e border=3D"0" cellspacing=3D"0" cellpadding=3D"2" width=3D"100%" class=3D"=
+navbar"><tbody><tr><td valign=3D"top" width=3D"80%"><p><a href=3D"https://w=
+eb.archive.org/web/20001217104300id_/http://www.thsmith.dircon.co.uk/index.=
+html">Main Page</a> Site
+Overview: <a href=3D"https://web.archive.org/web/20001217104300id_/http://w=
+ww.thsmith.dircon.co.uk/supernewsgroups/download.html">Super
+NewsGroups</a> <a href=3D"https://web.archive.org/web/20001217104300id_/htt=
+p://www.thsmith.dircon.co.uk/emailcleaner/index.html">Email
+Cleaner</a> <a href=3D"https://web.archive.org/web/20001217104300id_/http:/=
+/www.thsmith.dircon.co.uk/programmer/index.html" target=3D"_top">Programmer
+section</a></p>
+</td><td align=3D"right" valign=3D"top" width=3D"20%"><p><a href=3D"mailto:=
+delete@softhome.net">email
+me</a></p>
+</td></tr></tbody></table></p></td></tr></tbody></table></font></p></x-clar=
+is-tagview></x-claris-window></body></html>
+------MultipartBoundary--rNAPidmZAXnGlKgb5noeFVWRwivwxca0uWG7JRyCam----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://web.archive.org/web/20001217104300id_/http://www.thsmith.dircon.co.uk/cssmain.css
+
+@charset "windows-1252";
+
+body.usual { font-family: Verdana, Times, Helvetica, sans-serif; background=
+-color: rgb(238, 242, 245); }
+
+body.minim { font-family: Verdana, Times, Helvetica, sans-serif; }
+
+li { font-size: 12px; }
+
+body.usual p.bigger { font-size: 14px; }
+
+body.usual p.smaller { font-size: 10px; }
+
+body.usual p.textquote { color: rgb(51, 51, 51); margin-left: 30px; }
+
+body.usual table { font-size: 12px; text-align: justify; }
+
+body.minim table { font-size: 10px; text-align: justify; }
+
+h6 { font-size: 110%; font-family: Times, "New York", serif; }
+
+h5 { font-size: 120%; font-family: Times, "New York", serif; }
+
+h4 { font-size: 140%; font-family: Times, "New York", serif; }
+
+h3 { font-size: 160%; font-family: Times, "New York", serif; }
+
+h2 { font-size: 180%; font-family: Times, "New York", serif; }
+
+h1 { font-size: 200%; font-family: Times, "New York", serif; }
+
+a:link { color: rgb(88, 88, 255); }
+
+a:active { color: rgb(198, 7, 255); }
+
+a:visited { color: rgb(132, 123, 220); }
+
+a.plain:visited, a.plain:link, a.plain:active { text-decoration: none; }
+
+a.plain:hover { text-decoration: none; color: rgb(0, 238, 0); }
+
+a.normal:visited, a.normal:link, a.normal:active { text-decoration: none; }
+
+a.normal:hover { text-decoration: none; color: rgb(0, 238, 0); }
+
+a.aboutfile:visited, a.aboutfile:link, a.aboutfile:active { text-decoration=
+: none; }
+
+a.aboutfile:hover { text-decoration: none; color: rgb(0, 238, 0); }
+
+a.dlfile:visited, a.dlfile:link, a.dlfile:active { text-decoration: none; }
+
+a.dlfile:hover { text-decoration: none; color: rgb(0, 238, 0); }
+
+font.plainlinktitle { }
+
+code { font-family: monaco, monospace; font-size: 9px; }
+
+table.navbar a:visited, table.navbar a:link, table.navbar a:active { text-d=
+ecoration: none; color: rgb(88, 88, 255); }
+
+table.navbar a:hover { text-decoration: none; color: rgb(0, 238, 0); }
+
+table.navbar { background-color: white; border-style: ridge; padding: 3px; =
+border-color: rgb(0, 238, 0); border-width: 1px; color: black; }
+
+table.dlfiles { background-color: white; border-style: ridge; padding: 3px;=
+ border-color: rgb(0, 238, 0); border-width: 1px; color: black; }
+
+table.bordertable { border-color: rgb(0, 238, 0); border-width: 1px; backgr=
+ound-color: white; border-style: solid; }
+
+table.info { color: rgb(208, 208, 208); background-color: black; }
+
+table.info a:visited, table.info a:link, table.info a:active { text-decorat=
+ion: none; color: rgb(255, 255, 204); }
+
+table.info a:hover { text-decoration: none; color: rgb(0, 238, 0); }
+
+table.info a.dlfile:visited, table.info a.dlfile:link, table.info a.dlfile:=
+active { text-decoration: none; color: rgb(85, 85, 255); }
+
+table.info a.dlfile:hover { text-decoration: none; color: rgb(0, 238, 0); }
+------MultipartBoundary--rNAPidmZAXnGlKgb5noeFVWRwivwxca0uWG7JRyCam------

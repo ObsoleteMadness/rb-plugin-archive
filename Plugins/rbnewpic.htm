@@ -1,0 +1,226 @@
+<html>
+<!--This file created 00.7.1 4:39 AM by Home Page Pro version 3.0J v1-->
+<head><script type="text/javascript" src="/_static/js/bundle-playback.js?v=1WaXNDFE" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=txqj7nKC" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://hp.vector.co.jp:80/authors/VA009277/rb/plugins/rbnewpic.htm","20050920105625","https://web.archive.org/","web","/_static/",
+	      "1127213785");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+   <title>Micono Utilities</title>
+   <meta name="GENERATOR" content="Home Page Pro 3.0J v1">
+   <meta http-equiv="Content-Type" content="text/html;CHARSET=x-sjis">
+   <x-claris-window top="62" bottom="826" left="165" right="724">
+   <x-claris-tagview mode="minimal">
+</head>
+<body bgcolor="#FFFFFF">
+<center><font size="+1"><b>Micono NewPicture v1.2.0b1<br>
+</b></font><font size="-1"><b>for REALbasic 2.1 plugin</b></font>
+
+<p><font size="-1">プラグインは<huu-self date="YYYY/MM/DD">2000/7/1</huu-self>にアップロードしました。</font></p>
+
+<p><a href="https://web.archive.org/web/20050920105625/http://www.vector.co.jp/authors/VA009277/rb/plugins/rbnewpic.sit.hqx"><b>&#91;ダウンロード&#93;</b></a></p>
+
+<p><b>
+
+<hr>
+
+</b></p></center>
+
+<h2><font size="-1">Micono NewPictureについて</font></h2>
+
+<blockquote><font size="-1">確保するメモリー領域を指定して新規Pictureを作れます。<br>
+   8bit grayscale, Indexed colorが使用可能<br>
+   REALbasic 2.1用のpluginです。</font>
+   
+   <p><font size="-1">変更点（-&gt;1.2.0）</font></p>
+   
+   <ul>
+      <li>8bit grayscale, Indexed colorが使用可能になった。</li>
+   </ul>
+</blockquote>
+
+<p>
+
+<hr>
+
+</p>
+
+<h2><font size="-1">使い方</font></h2>
+
+<blockquote><font size="-1"><table border="1" bgcolor="#FFFFCC" width="400">
+      <tr>
+         <td bgcolor="#99FFCC">
+            <p><font size="-1" color="#996600"><b>新規Pictureを作る</b></font></p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p><font size="-1"><b>mic_NewPicture( Width as Integer,
+            Height as Integer, Depth as Integer, UseTemp as Integer )
+            as Picture<br>
+            <br>
+            Depth：</b>1, 2, 4, 8, 16, 32階調</font></p>
+            
+            <p><font size="-1"><b>UseTemp：<table border="1">
+               <tr>
+                  <td>
+                     <p><font size="-1">０：アプリケーションヒープで確保、できなければテンポラリーで確保</font></p>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <p><font size="-1">１：テンポラリーで確保、できなければでアプリケーションヒープ確保</font></p>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <p><font size="-1">２：アプリケーションヒープで確保、できなければNILを返す</font></p>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <p><font size="-1">３：テンポラリーで確保、できなければNILを返す</font></p>
+                  </td>
+               </tr>
+            </table>
+             </b></font></p>
+         </td>
+      </tr>
+   </table>
+   </font>
+   
+   <p><font size="-1"><table border="1" bgcolor="#FFFFCC" width="400">
+      <tr>
+         <td bgcolor="#99FFCC">
+            <p><font size="-1" color="#996600"><b>新規8bit Indexed
+            color Pictureを作る</b></font></p>
+         </td>
+      </tr>
+      <tr bgcolor="#CCFFFF">
+         <td>
+            <p><font size="-1"><b>Gray Scale</b></font></p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p><font size="-1"><b>mic_NewGrayScalePicture( Width as
+            Integer, Height as Integer, UseTemp as Integer ) as
+            Picture</b></font></p>
+         </td>
+      </tr>
+      <tr bgcolor="#CCFFFF">
+         <td>
+            <p><font size="-1"><b>Red</b></font></p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p><font size="-1"><b>mic_NewRedIndexedColorPicture(
+            Width as Integer, Height as Integer, UseTemp as Integer )
+            as Picture</b></font></p>
+         </td>
+      </tr>
+      <tr bgcolor="#CCFFFF">
+         <td>
+            <p><font size="-1"><b>Green</b></font></p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p><font size="-1"><b>mic_NewGreenIndexedColorPicture(
+            Width as Integer, Height as Integer, UseTemp as Integer )
+            as Picture</b></font></p>
+         </td>
+      </tr>
+      <tr bgcolor="#CCFFFF">
+         <td>
+            <p><font size="-1"><b>Blue</b></font></p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p><font size="-1"><b>mic_NewBlueIndexedColorPicture(
+            Width as Integer, Height as Integer, UseTemp as Integer )
+            as Picture</b></font></p>
+         </td>
+      </tr>
+      <tr bgcolor="#CCFFFF">
+         <td>
+            <p><font size="-1"><b>Use 'clut' resource</b></font></p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p><font size="-1"><b>mic_NewResCLUTIndexedColorPicture(
+            Width as Integer, Height as Integer, clutID as Integer,
+            UseTemp as Integer ) as Picture</b></font></p>
+         </td>
+      </tr>
+   </table>
+    </font></p></blockquote>
+
+<p>
+
+<hr>
+
+</p>
+
+<h2><font size="-1">免責と著作</font></h2>
+
+<ul>
+   <li><font size="-1">このpluginを使って何かあっても責任は負いません。</font></li>
+   
+   <li><font size="-1">このpluginは開発中の機能も含みますのでくれぐれも注意してお使い下さい。</font></li>
+   
+   <li><font size="-1">このpluginの著作権は私（尾野道男）にあります。</font></li>
+</ul>
+
+<p>　</p>
+
+<p>
+
+<hr>
+
+</p>
+
+<h2><font size="-1">サポート</font></h2>
+
+<ul>
+   <li><font size="-1">このpluginはhttp://www.threeweb.ad.jp/~miconoからダウンロード可能です。</font></li>
+   
+   <li><font size="-1">このpluginに関するお問い合わせは、micono@tky.3web.ne.jpまでメールを下さい。</font></li>
+</ul>
+
+<center><font size="-1">
+
+<hr>
+
+Copyright 1999, Micono Utilities. All rights
+reserved.</font></center>
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 10:56:25 Sep 20, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 04:35:54 May 26, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 89.845
+  exclusion.robots: 0.088
+  exclusion.robots.policy: 0.078
+  RedisCDXSource: 14.082
+  esindex: 0.009
+  LoadShardBlock: 57.285 (3)
+  PetaboxLoader3.datanode: 93.833 (4)
+  load_resource: 89.211
+  PetaboxLoader3.resolve: 33.948
+-->

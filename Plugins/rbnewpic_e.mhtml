@@ -1,0 +1,889 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://web.archive.org/web/20010418230923if_/http://hp.vector.co.jp/authors/VA009277/rb/plugins/rbnewpic_e.htm
+Subject: Micono Utilities
+Date: Fri, 26 May 2023 04:32:22 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--9T4JqKLUaf93Zk577o8OFqGgQfm235Y1wwXzlB07sQ----"
+
+
+------MultipartBoundary--9T4JqKLUaf93Zk577o8OFqGgQfm235Y1wwXzlB07sQ----
+Content-Type: text/html
+Content-ID: <frame-39387726379A90BB5D2CEED16A1FDC55@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://web.archive.org/web/20010418230923if_/http://hp.vector.co.jp/authors/VA009277/rb/plugins/rbnewpic_e.htm
+
+<html><!--This file created 00.7.1 4:40 AM by Home Page Pro version 3.0J v1=
+--><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3D=
+Shift_JIS">
+
+
+<link rel=3D"stylesheet" type=3D"text/css" href=3D"https://web.archive.org/=
+_static/css/banner-styles.css?v=3DS1zqJCYt">
+<link rel=3D"stylesheet" type=3D"text/css" href=3D"https://web.archive.org/=
+_static/css/iconochive.css?v=3DqtvMKcIJ">
+<!-- End Wayback Rewrite JS Include -->
+
+   <title>Micono Utilities</title>
+   <meta name=3D"GENERATOR" content=3D"Home Page Pro 3.0J v1">
+  =20
+   </head><body bgcolor=3D"#FFFFFF"><x-claris-window top=3D"62" bottom=3D"7=
+31" left=3D"26" right=3D"578">
+   <x-claris-tagview mode=3D"minimal">
+<!--This file created 99.8.25 11:14 AM by Home Page Pro version 3.0J v1-->
+
+
+<center><font size=3D"+1"><b>Micono NewPicture v1.2.0b1</b></font><br>
+<font size=3D"-1"><b>for REALbasic 2.1 plugin</b></font>
+
+<p><font size=3D"-1">Upload: <huu-self date=3D"YYYY/MM/DD">2000/7/1</huu-se=
+lf></font></p>
+
+<p><a href=3D"https://web.archive.org/web/20010418230923/http://www.vector.=
+co.jp/authors/VA009277/rb/plugins/rbnewpic.sit.hqx"><font size=3D"-1"><b>[D=
+ownload]</b></font></a></p>
+
+<p><font size=3D"-1">
+
+</font></p><hr><font size=3D"-1">
+
+</font><p></p></center>
+
+<h2><font size=3D"-2">About Micono NewPicture</font></h2>
+
+<blockquote><font size=3D"-2">You can make a new picture in temporary
+   memory.<br>
+   You can make a indexed color picture.</font><font size=3D"-1"><br>
+   </font><font size=3D"-2">This plugin is for REALbasic ver
+   2.1.</font></blockquote>
+
+<p><font size=3D"-1">
+
+</font></p><hr><font size=3D"-1">
+
+</font><p></p>
+
+<h2><font size=3D"-2">Methods</font></h2>
+
+<blockquote><font size=3D"-1"><table border=3D"1" bgcolor=3D"#FFFFCC" width=
+=3D"400">
+      <tbody><tr>
+         <td bgcolor=3D"#99FFCC">
+            <p><font size=3D"-1" color=3D"#996600"><b>Returns a picture
+            object of the size and depth specified. Used for
+            off-screen drawing.</b></font></p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p><font size=3D"-1"><b>mic_NewPicture( Width as Integer,
+            Height as Integer, Depth as Integer, UseTemp as Integer )
+            as Picture</b></font></p>
+           =20
+            <p><font size=3D"-1"><b>Depth=81F</b>1, 2, 4, 8, 16, 32
+            depth</font></p>
+           =20
+            <p><font size=3D"-1"><b>UseTemp=81F</b></font>
+            <table border=3D"1">
+               <tbody><tr>
+                  <td>
+                     <p><font size=3D"-1">0: Try making picture in
+                     application heap. if it fails, try in
+                     temporary.</font></p>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <p><font size=3D"-1">1: Try making picture in
+                     temporary. if it fails, try in application
+                     heap.</font></p>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <p><font size=3D"-1">2: Try making picture in
+                     application heap. if it fails, return
+                     nil.</font></p>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <p><font size=3D"-1">3: Try making picture in
+                     temporary. if it fails, return nil.</font></p>
+                  </td>
+               </tr>
+            </tbody></table>
+            </p>
+         </td>
+      </tr>
+   </tbody></table>
+   </font>
+  =20
+   <p><font size=3D"-1"><table border=3D"1" bgcolor=3D"#FFFFCC" width=3D"40=
+0">
+      <tbody><tr>
+         <td bgcolor=3D"#99FFCC">
+            <p><font size=3D"-1" color=3D"#996600"><b>Returns a indeced
+            color picture object of the size. Used for off-screen
+            drawing.</b></font></p>
+         </td>
+      </tr>
+      <tr bgcolor=3D"#CCFFFF">
+         <td>
+            <p><font size=3D"-1"><b>Gray Scale</b></font></p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p><font size=3D"-1"><b>mic_NewGrayScalePicture( Width as
+            Integer, Height as Integer, UseTemp as Integer ) as
+            Picture</b></font></p>
+         </td>
+      </tr>
+      <tr bgcolor=3D"#CCFFFF">
+         <td>
+            <p><font size=3D"-1"><b>Red</b></font></p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p><font size=3D"-1"><b>mic_NewRedIndexedColorPicture(
+            Width as Integer, Height as Integer, UseTemp as Integer )
+            as Picture</b></font></p>
+         </td>
+      </tr>
+      <tr bgcolor=3D"#CCFFFF">
+         <td>
+            <p><font size=3D"-1"><b>Green</b></font></p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p><font size=3D"-1"><b>mic_NewGreenIndexedColorPicture(
+            Width as Integer, Height as Integer, UseTemp as Integer )
+            as Picture</b></font></p>
+         </td>
+      </tr>
+      <tr bgcolor=3D"#CCFFFF">
+         <td>
+            <p><font size=3D"-1"><b>Blue</b></font></p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p><font size=3D"-1"><b>mic_NewBlueIndexedColorPicture(
+            Width as Integer, Height as Integer, UseTemp as Integer )
+            as Picture</b></font></p>
+         </td>
+      </tr>
+      <tr bgcolor=3D"#CCFFFF">
+         <td>
+            <p><font size=3D"-1"><b>Use 'clut' resource</b></font></p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p><font size=3D"-1"><b>mic_NewResCLUTIndexedColorPicture(
+            Width as Integer, Height as Integer, clutID as Integer,
+            UseTemp as Integer ) as Picture</b></font></p>
+         </td>
+      </tr>
+   </tbody></table>
+   </font></p></blockquote>
+
+<p><font size=3D"-1">
+
+</font></p><hr><font size=3D"-1">
+
+</font><p></p>
+
+<h2><font size=3D"-2">Warranty and Copyright Information</font></h2>
+
+<ul>
+   <li><font size=3D"-2">The author, Michio Ono, makes no
+   warranties.</font></li>
+  =20
+   <li><font size=3D"-2">Use this plugin at your own risk.</font></li>
+  =20
+   <li><font size=3D"-2">The author claims no liability for dataloss or
+   any other problems</font><font size=3D"-1">
+   </font><font size=3D"-2">caused directly or indirectly by this
+   plugin.</font></li>
+  =20
+   <li><font size=3D"-2">The copyright of this plugin belongs to the
+   author.</font></li>
+</ul>
+
+<p><font size=3D"-1">
+
+</font></p><hr><font size=3D"-1">
+
+</font><p></p>
+
+<h2><font size=3D"-2">Support</font></h2>
+
+<ul>
+   <li><font size=3D"-2">You can get the latest version of this plugin
+   at http://www.threeweb.ad.jp/~micono.</font></li>
+  =20
+   <li><font size=3D"-2">If you have any comments or questions, drop me
+   a line at micono@tky.3web.ne.jp.</font></li>
+</ul>
+
+<center><font size=3D"-1">
+
+<hr>
+
+</font><font size=3D"-2">Copyright 1999, Micono Utilities. All rights
+reserved.</font></center>
+
+
+
+</x-claris-tagview></x-claris-window></body></html><!--
+     FILE ARCHIVED ON 23:09:23 Apr 18, 2001 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 04:29:49 May 26, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+--><!--
+playback timings (ms):
+  captures_list: 103.966
+  exclusion.robots: 0.08
+  exclusion.robots.policy: 0.072
+  cdx.remote: 0.056
+  esindex: 0.008
+  LoadShardBlock: 79.062 (3)
+  PetaboxLoader3.datanode: 105.407 (4)
+  load_resource: 328.216
+  PetaboxLoader3.resolve: 282.848
+-->
+------MultipartBoundary--9T4JqKLUaf93Zk577o8OFqGgQfm235Y1wwXzlB07sQ----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://web.archive.org/_static/css/banner-styles.css?v=S1zqJCYt
+
+@charset "utf-8";
+
+@import url("record.css");
+
+#wm-ipp-base { height: 65px; padding: 0px; margin: 0px; border: none; backg=
+round: none transparent; }
+
+#wm-ipp { z-index: 2147483647; }
+
+#wm-ipp, #wm-ipp * { font-family: "Lucida Grande", Helvetica, Arial, sans-s=
+erif; font-size: 12px; line-height: 1.2; letter-spacing: 0px; width: auto; =
+height: auto; max-width: none; max-height: none; min-height: 0px; outline: =
+none; float: none; text-align: left; border: none; color: rgb(0, 0, 0); tex=
+t-indent: 0px; position: initial; background: none; min-width: 0px !importa=
+nt; }
+
+#wm-ipp div, #wm-ipp canvas { display: block; }
+
+#wm-ipp div, #wm-ipp tr, #wm-ipp td, #wm-ipp a, #wm-ipp form { padding: 0px=
+; margin: 0px; border: none; border-radius: 0px; background-color: transpar=
+ent; background-image: none; height: auto; }
+
+#wm-ipp table { border: none; border-collapse: collapse; margin: 0px; paddi=
+ng: 0px; width: auto; font-size: inherit; }
+
+#wm-ipp form input { height: auto; display: inline; margin: 0px; color: rgb=
+(0, 0, 0); background: none rgb(255, 255, 255); border: 1px solid rgb(102, =
+102, 102); padding: 1px !important; }
+
+#wm-ipp form input[type=3D"submit"] { padding: 0px 8px !important; margin: =
+1px 0px 1px 5px !important; width: auto !important; border: 1px solid rgb(0=
+, 0, 0) !important; background: rgb(255, 255, 255) !important; color: rgb(0=
+, 0, 0) !important; }
+
+#wm-ipp form input[type=3D"submit"]:hover { background: rgb(238, 238, 238) =
+!important; cursor: pointer !important; }
+
+#wm-ipp form input[type=3D"submit"]:active { transform: translateY(1px); }
+
+#wm-ipp a { display: inline; }
+
+#wm-ipp a:hover { text-decoration: underline; }
+
+#wm-ipp a.wm-btn:hover { text-decoration: none; color: rgb(255, 255, 0) !im=
+portant; }
+
+#wm-ipp a.wm-btn:hover span { color: rgb(255, 255, 0) !important; }
+
+#wm-ipp #wm-ipp-inside { margin: 0px 6px; border-right: 5px solid rgb(0, 0,=
+ 0); border-bottom: 5px solid rgb(0, 0, 0); border-left: 5px solid rgb(0, 0=
+, 0); border-image: initial; border-top: none; background-color: rgba(255, =
+255, 255, 0.9); box-shadow: rgb(51, 51, 51) 1px 1px 4px; border-radius: 0px=
+ 0px 8px 8px; }
+
+#wm-ipp #wm-logo { padding: 0px 10px; vertical-align: middle; min-width: 10=
+0px; flex: 0 0 100px; }
+
+#wm-ipp .c { padding-left: 4px; }
+
+#wm-ipp .c .u { margin-top: 4px !important; }
+
+#wm-ipp .n { vertical-align: bottom; padding: 0px 0px 0px 5px !important; }
+
+#wm-ipp .n a { text-decoration: none; color: rgb(51, 51, 255); font-weight:=
+ bold; }
+
+#wm-ipp .n .b { overflow: visible; white-space: nowrap; color: rgb(153, 153=
+, 170); vertical-align: middle; padding: 0px 6px 0px 0px !important; text-a=
+lign: right !important; }
+
+#wm-ipp .n .y .b { padding: 0px 6px 2px 0px !important; }
+
+#wm-ipp .n .c { background: rgb(0, 0, 0); color: rgb(255, 255, 0); font-wei=
+ght: bold; text-align: center; padding: 0px !important; }
+
+#wm-ipp.hi .n td.c { color: rgb(236, 0, 140); }
+
+#wm-ipp .n td.f { overflow: visible; white-space: nowrap; color: rgb(153, 1=
+53, 170); vertical-align: middle; padding: 0px 0px 0px 6px !important; text=
+-align: left !important; }
+
+#wm-ipp .n tr.m td { text-transform: uppercase; white-space: nowrap; paddin=
+g: 2px 0px; }
+
+#wm-ipp .c .s { vertical-align: bottom; padding: 0px 5px 0px 0px !important=
+; }
+
+#wm-ipp #wm-nav-captures { white-space: nowrap; }
+
+#wm-ipp .c .s a.t { color: rgb(51, 51, 255); font-weight: bold; line-height=
+: 1.8; }
+
+#wm-ipp .c .s div.r { color: rgb(102, 102, 102); font-size: 9px; white-spac=
+e: nowrap; }
+
+#wm-ipp .c .k { padding-bottom: 1px; }
+
+#wm-ipp .c .s { padding: 0px 5px 2px 0px !important; }
+
+#wm-ipp td#displayMonthEl { padding: 2px 0px !important; }
+
+#wm-ipp td#displayYearEl { padding: 0px 0px 2px !important; }
+
+div#wm-ipp-sparkline { position: relative; white-space: nowrap; background-=
+color: rgb(255, 255, 255); cursor: pointer; line-height: 0.9; }
+
+#sparklineImgId, #wm-sparkline-canvas { position: relative; z-index: 9012; =
+max-width: none; }
+
+#wm-ipp-sparkline div.yt { position: absolute; top: 0px; z-index: 9010 !imp=
+ortant; background-color: rgb(255, 255, 0) !important; }
+
+#wm-ipp-sparkline div.mt { position: absolute; top: 0px; z-index: 9013 !imp=
+ortant; background-color: rgb(236, 0, 140) !important; }
+
+#wm-ipp .r { margin-left: 4px; }
+
+#wm-ipp .r a { color: rgb(51, 51, 255); border: none; position: relative; b=
+ackground-color: transparent; text-decoration: none; background-repeat: no-=
+repeat !important; background-position: 100% 100% !important; }
+
+#wm-ipp #wm-capinfo { border-radius: 0px 0px 4px 4px; }
+
+#wm-ipp #wm-capinfo .c-logo { display: block; float: left; margin-right: 3p=
+x; width: 90px; min-height: 90px; max-height: 290px; border-radius: 45px; o=
+verflow: hidden; background-position: 50% center; background-size: auto 90p=
+x; box-shadow: rgb(208, 208, 208) 0px 0px 2px 2px inset; }
+
+#wm-ipp #wm-capinfo .c-logo span { display: inline-block; }
+
+#wm-ipp #wm-capinfo .c-logo img { height: 90px; position: relative; left: -=
+50%; }
+
+#wm-ipp #wm-capinfo .wm-title { font-size: 130%; }
+
+#wm-ipp #wm-capinfo a.wm-selector { display: inline-block; color: rgb(170, =
+170, 170); padding: 2px 8px; text-decoration: none !important; }
+
+#wm-ipp #wm-capinfo a.wm-selector.selected { background-color: rgb(102, 102=
+, 102); }
+
+#wm-ipp #wm-capinfo a.wm-selector:hover { color: rgb(255, 255, 255); }
+
+#wm-ipp #wm-capinfo.notice-only #wm-capinfo-collected-by, #wm-ipp #wm-capin=
+fo.notice-only #wm-capinfo-timestamps { display: none; }
+
+#wm-ipp #wm-capinfo #wm-capinfo-notice .wm-capinfo-content { background-col=
+or: rgb(255, 255, 0); padding: 5px; font-size: 14px; text-align: center; }
+
+#wm-ipp #wm-capinfo #wm-capinfo-notice .wm-capinfo-content * { font-size: 1=
+4px; text-align: center; }
+
+#wm-ipp #wm-expand { right: 1px; bottom: -1px; color: rgb(255, 255, 255); b=
+ackground-color: rgb(102, 102, 102) !important; padding: 0px 5px 0px 3px !i=
+mportant; border-radius: 3px 3px 0px 0px !important; }
+
+#wm-ipp #wm-expand span { color: rgb(255, 255, 255); }
+
+#wm-ipp #wm-expand #wm-expand-icon { display: inline-block; transition: tra=
+nsform 0.5s ease 0s; transform-origin: 50% 45%; }
+
+#wm-ipp #wm-expand.wm-open #wm-expand-icon { transform: rotate(180deg); }
+
+#wm-ipp #wmtb { text-align: right; }
+
+#wm-ipp #wmtb #wmtbURL { width: calc(100% - 45px); }
+
+#wm-ipp #wm-graph-anchor { border-right: 1px solid rgb(204, 204, 204); }
+
+html.wb-highlight { box-shadow: rgb(165, 14, 58) 0px 0px 0px 3px inset !imp=
+ortant; }
+
+.wb-highlight { outline: rgb(165, 14, 58) solid 3px !important; }
+
+#wm-ipp-print { display: none !important; }
+
+@media print {
+  #wm-ipp-base { display: none !important; }
+  #wm-ipp-print { white-space: nowrap; overflow: hidden; text-overflow: ell=
+ipsis; display: block !important; }
+}
+
+@media (max-width: 414px) {
+  #wm-ipp .xxs { display: none !important; }
+}
+
+@media (min-width: 1055px) {
+  #wm-ipp #wm-graph-anchor { display: block !important; }
+}
+
+@media (max-width: 1054px) {
+  #wm-ipp #wm-graph-anchor { display: none !important; }
+}
+
+@media (max-width: 1163px) {
+  #wm-logo { display: none !important; }
+}
+
+#wm-btns { white-space: nowrap; margin-top: -2px; }
+
+#wm-btns #wm-save-snapshot-open { margin-right: 7px; top: -6px; }
+
+#wm-btns #wm-sign-in { box-sizing: content-box; display: none; margin-right=
+: 7px; top: -8px; border: 2px solid rgb(0, 0, 0); border-radius: 14px; padd=
+ing-right: 2px; padding-bottom: 2px; width: 11px; height: 11px; }
+
+#wm-btns #wm-sign-in > .iconochive-person { font-size: 12.5px; }
+
+#wm-save-snapshot-open > .iconochive-web { color: rgb(0, 0, 0); font-size: =
+160%; }
+
+#wm-ipp #wm-share { display: flex; align-items: flex-end; justify-content: =
+space-between; }
+
+#wm-share > #wm-screenshot { display: inline-block; margin-right: 3px; visi=
+bility: hidden; }
+
+#wm-screenshot > .iconochive-image { color: rgb(0, 0, 0); font-size: 160%; =
+}
+
+#wm-share > #wm-video { display: inline-block; margin-right: 3px; visibilit=
+y: hidden; }
+
+#wm-video > .iconochive-movies { color: rgb(0, 0, 0); display: inline-block=
+; font-size: 150%; margin-bottom: 2px; }
+
+#wm-btns #wm-save-snapshot-in-progress { display: none; font-size: 160%; op=
+acity: 0.5; position: relative; margin-right: 7px; top: -5px; }
+
+#wm-btns #wm-save-snapshot-success { display: none; color: green; position:=
+ relative; top: -7px; }
+
+#wm-btns #wm-save-snapshot-fail { display: none; color: red; position: rela=
+tive; top: -7px; }
+
+.wm-icon-screen-shot { display: inline-block; background: url("../images/we=
+b-screenshot.svg") 0% 0% / contain no-repeat !important; width: 22px !impor=
+tant; height: 19px !important; }
+
+#donato { height: 0px; margin: 0px; padding: 0px; border-bottom: 1px solid =
+rgb(153, 153, 153) !important; }
+
+body.wm-modal { height: auto !important; overflow: hidden !important; }
+
+#donato #donato-base { width: 100%; height: 100%; margin: 0px; padding: 0px=
+; position: absolute; z-index: 2147483639; }
+
+body.wm-modal #donato #donato-base { position: fixed; inset: 0px; z-index: =
+2147483640; }
+
+.wb-autocomplete-suggestions { font-family: "Lucida Grande", Helvetica, Ari=
+al, sans-serif; font-size: 12px; text-align: left; cursor: default; border-=
+width: 0px 1px 1px; border-right-style: solid; border-bottom-style: solid; =
+border-left-style: solid; border-right-color: rgb(204, 204, 204); border-bo=
+ttom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); bord=
+er-image: initial; border-top-style: initial; border-top-color: initial; ba=
+ckground: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.1) -1px 1px 3px; =
+position: absolute; display: none; z-index: 2147483647; max-height: 254px; =
+overflow: hidden auto; box-sizing: border-box; }
+
+.wb-autocomplete-suggestion { position: relative; padding: 0px 0.6em; line-=
+height: 23px; white-space: nowrap; overflow: hidden; text-overflow: ellipsi=
+s; font-size: 1.02em; color: rgb(51, 51, 51); }
+
+.wb-autocomplete-suggestion b { font-weight: bold; }
+
+.wb-autocomplete-suggestion.selected { background: rgb(240, 240, 240); }
+------MultipartBoundary--9T4JqKLUaf93Zk577o8OFqGgQfm235Y1wwXzlB07sQ----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://web.archive.org/_static/css/record.css
+
+@charset "utf-8";
+
+.__wb_overlay { opacity: 0.6; background-color: rgb(0, 0, 0); position: fix=
+ed; width: 100%; height: 100%; top: 0px; left: 0px; padding: 0px !important=
+; border: 0px !important; margin: 0px !important; border-radius: 0px !impor=
+tant; z-index: 2147483643 !important; }
+
+#__wb_record_overlay_div { cursor: wait !important; }
+
+.__wb_record_content { opacity: 1; position: fixed; top: 50%; left: 50%; bo=
+rder-radius: 8px; box-shadow: rgb(0, 0, 0) 0px 0px 30px 5px; margin: 0px !i=
+mportant; padding: 0px !important; background-color: rgb(255, 255, 255) !im=
+portant; z-index: 2147483644 !important; }
+
+#__wb_record_content_loader { cursor: wait !important; padding-top: 30px !i=
+mportant; margin-left: -287px !important; margin-top: -177px !important; wi=
+dth: 574px !important; height: 355px !important; }
+
+#__wb_record_content_done { margin-left: -427px !important; margin-top: -17=
+7px !important; width: 855px !important; height: 355px !important; }
+
+.__wb_record_content > * { margin: auto !important; display: block !importa=
+nt; text-align: center !important; font-family: "Open Sans", "Helvetica Neu=
+e", Helvetica, Arial, sans-serif !important; }
+
+.__wb_record_content > wb_h1 { line-height: 2em; font-size: 36px !important=
+; color: rgb(34, 34, 34) !important; margin: 0px !important; padding: 0px !=
+important; font-weight: normal !important; width: auto !important; height: =
+auto !important; }
+
+.__wb_record_content > wb_p { line-height: 2em; font-size: 17px !important;=
+ color: rgb(34, 34, 34) !important; margin: 8px 0px !important; padding: 0p=
+x !important; }
+
+.__wb_record_content > #_wb_logo { margin-bottom: 10px !important; }
+
+.__wb_record_content > #_wb_spinner { margin-top: 30px !important; margin-b=
+ottom: 30px !important; }
+
+.__wb_record_content > #_wb_curr_url { text-decoration: underline !importan=
+t; font-weight: bold !important; }
+
+#__wb_record_content_done > #__wb_link { font-size: 20px !important; border=
+: 1px solid rgb(170, 170, 170) !important; padding: 3px !important; text-al=
+ign: center !important; width: 80% !important; height: auto !important; }
+
+#__wb_record_content_done > #__wb_link:focus { outline: 0px !important; bor=
+der-color: rgb(66, 139, 202) !important; }
+
+#__wb_record_content_done > #__wb_donate_close { float: right; display: inl=
+ine-block; font-size: 18px !important; width: auto !important; margin: 0px =
+!important; padding: 8px 8px 0px 0px !important; }
+
+#__wb_donate_close > #__wb_record_done_close { display: inline-block; curso=
+r: pointer !important; vertical-align: bottom !important; }
+
+#__wb_record_content_done > #__wb_donate_close a { color: rgb(66, 139, 202)=
+ !important; }
+
+#__wb_record_content_done > #__wb_donate_close a:link { color: rgb(66, 139,=
+ 202) !important; text-decoration: none !important; margin-right: 16px !imp=
+ortant; }
+
+#__wb_record_content_done > #__wb_donate_close a:visited { color: rgb(66, 1=
+39, 202) !important; }
+
+#__wb_record_content_done > #__wb_donate_close a:hover { color: rgb(0, 177,=
+ 247) !important; }
+
+#__wb_spinningSquaresG { position: relative; width: 240px; height: 20px; pa=
+dding: 0px !important; margin: 30px 0px 30px 160px !important; border: 0px =
+!important; border-radius: 0px !important; }
+
+.__wb_spinningSquaresG { position: absolute; top: 0px; background-color: rg=
+b(0, 0, 0); width: 22px; height: 22px; animation-name: bounce_spinningSquar=
+esG; animation-duration: 1.9s; animation-iteration-count: infinite; transfo=
+rm: scale(0.3); margin: 0px !important; padding: 0px !important; border: 0p=
+x !important; border-radius: 0px !important; }
+
+#__wb_spinningSquaresG_1 { left: 0px; animation-delay: 0.76s; }
+
+#__wb_spinningSquaresG_2 { left: 30px; animation-delay: 0.95s; }
+
+#__wb_spinningSquaresG_3 { left: 60px; animation-delay: 1.14s; }
+
+#__wb_spinningSquaresG_4 { left: 90px; animation-delay: 1.33s; }
+
+#__wb_spinningSquaresG_5 { left: 120px; animation-delay: 1.52s; }
+
+#__wb_spinningSquaresG_6 { left: 150px; animation-delay: 1.71s; }
+
+#__wb_spinningSquaresG_7 { left: 180px; animation-delay: 1.9s; }
+
+#__wb_spinningSquaresG_8 { left: 210px; animation-delay: 2.09s; }
+
+@-webkit-keyframes bounce_spinningSquaresG {=20
+  0% { transform: scale(1); background-color: rgb(0, 0, 0); }
+  100% { transform: scale(0.3) rotate(90deg); background-color: rgb(255, 25=
+5, 255); }
+}
+
+@keyframes bounce_spinningSquaresG {=20
+  0% { transform: scale(1); background-color: rgb(0, 0, 0); }
+  100% { transform: scale(0.3) rotate(90deg); background-color: rgb(255, 25=
+5, 255); }
+}
+------MultipartBoundary--9T4JqKLUaf93Zk577o8OFqGgQfm235Y1wwXzlB07sQ----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://web.archive.org/_static/css/iconochive.css?v=qtvMKcIJ
+
+@charset "utf-8";
+
+@font-face { font-family: Iconochive-Regular; src: url("https://archive.org=
+/includes/fonts/Iconochive-Regular.woff?-ccsheb") format("woff"), url("http=
+s://archive.org/includes/fonts/Iconochive-Regular.ttf?-ccsheb") format("tru=
+etype"); font-weight: normal; font-style: normal; }
+
+[class^=3D"iconochive-"], [class*=3D" iconochive-"] { speak: none; font-sty=
+le: normal; font-weight: normal; font-variant: normal; text-transform: none=
+; line-height: 1; -webkit-font-smoothing: antialiased; font-family: Iconoch=
+ive-Regular !important; }
+
+.iconochive-Uplevel::before { content: "=E2=86=B5"; }
+
+.iconochive-exit::before { content: "=F0=9F=9A=A3"; }
+
+.iconochive-beta::before { content: "=CE=B2"; }
+
+.iconochive-logo::before { content: "=F0=9F=8F=9B"; }
+
+.iconochive-audio::before { content: "=F0=9F=95=A8"; }
+
+.iconochive-movies::before { content: "=F0=9F=8E=9E"; }
+
+.iconochive-software::before { content: "=F0=9F=92=BE"; }
+
+.iconochive-texts::before { content: "=F0=9F=95=AE"; }
+
+.iconochive-etree::before { content: "=F0=9F=8E=A4"; }
+
+.iconochive-image::before { content: "=F0=9F=96=BC"; }
+
+.iconochive-web::before { content: "=F0=9F=97=94"; }
+
+.iconochive-collection::before { content: "=E2=88=91"; }
+
+.iconochive-folder::before { content: "=F0=9F=93=82"; }
+
+.iconochive-data::before { content: "=F0=9F=97=83"; }
+
+.iconochive-tv::before { content: "=F0=9F=93=BA"; }
+
+.iconochive-article::before { content: "=F0=9F=97=8F"; }
+
+.iconochive-question::before { content: "=E2=8D=B0"; }
+
+.iconochive-question-dark::before { content: "?"; }
+
+.iconochive-info::before { content: "i"; }
+
+.iconochive-info-small::before { content: "=E2=93=98"; }
+
+.iconochive-comment::before { content: "=F0=9F=97=A9"; }
+
+.iconochive-comments::before { content: "=F0=9F=97=AA"; }
+
+.iconochive-person::before { content: "=F0=9F=91=A4"; }
+
+.iconochive-people::before { content: "=F0=9F=91=A5"; }
+
+.iconochive-eye::before { content: "=F0=9F=91=81"; }
+
+.iconochive-rss::before { content: "=E2=88=9E"; }
+
+.iconochive-time::before { content: "=F0=9F=95=91"; }
+
+.iconochive-quote::before { content: "=E2=9D=9D"; }
+
+.iconochive-disc::before { content: "=F0=9F=92=BF"; }
+
+.iconochive-tv-commercial::before { content: "=F0=9F=92=B0"; }
+
+.iconochive-search::before { content: "=F0=9F=94=8D"; }
+
+.iconochive-search-star::before { content: "=E2=9C=BD"; }
+
+.iconochive-tiles::before { content: "=E2=8A=9E"; }
+
+.iconochive-list::before { content: "=E2=87=B6"; }
+
+.iconochive-list-bulleted::before { content: "=E2=8C=97"; }
+
+.iconochive-latest::before { content: "=E2=88=88"; }
+
+.iconochive-left::before { content: "=CB=82"; }
+
+.iconochive-right::before { content: "=CB=83"; }
+
+.iconochive-left-solid::before { content: "=E2=97=82"; }
+
+.iconochive-right-solid::before { content: "=E2=96=B8"; }
+
+.iconochive-up-solid::before { content: "=E2=96=B4"; }
+
+.iconochive-down-solid::before { content: "=E2=96=BE"; }
+
+.iconochive-dot::before { content: "=E2=8F=A4"; }
+
+.iconochive-dots::before { content: "=E2=96=A6"; }
+
+.iconochive-columns::before { content: "=E2=96=AF"; }
+
+.iconochive-sort::before { content: "=E2=87=95"; }
+
+.iconochive-atoz::before { content: "=F0=9F=94=A4"; }
+
+.iconochive-ztoa::before { content: "=F0=9F=94=A5"; }
+
+.iconochive-upload::before { content: "=F0=9F=93=A4"; }
+
+.iconochive-download::before { content: "=F0=9F=93=A5"; }
+
+.iconochive-favorite::before { content: "=E2=98=85"; }
+
+.iconochive-heart::before { content: "=E2=99=A5"; }
+
+.iconochive-play::before { content: "=E2=96=B6"; }
+
+.iconochive-play-framed::before { content: "=F0=9F=8E=AC"; }
+
+.iconochive-fullscreen::before { content: "=E2=9B=B6"; }
+
+.iconochive-mute::before { content: "=F0=9F=94=87"; }
+
+.iconochive-unmute::before { content: "=F0=9F=94=8A"; }
+
+.iconochive-share::before { content: "=F0=9F=8E=81"; }
+
+.iconochive-edit::before { content: "=E2=9C=8E"; }
+
+.iconochive-reedit::before { content: "=E2=9C=90"; }
+
+.iconochive-gear::before { content: "=E2=9A=99"; }
+
+.iconochive-remove-circle::before { content: "=E2=9D=8E"; }
+
+.iconochive-plus-circle::before { content: "=F0=9F=97=96"; }
+
+.iconochive-minus-circle::before { content: "=F0=9F=97=95"; }
+
+.iconochive-x::before { content: "=F0=9F=97=99"; }
+
+.iconochive-fork::before { content: "=E2=8B=94"; }
+
+.iconochive-trash::before { content: "=F0=9F=97=91"; }
+
+.iconochive-warning::before { content: "=E2=9A=A0"; }
+
+.iconochive-flash::before { content: "=F0=9F=97=B2"; }
+
+.iconochive-world::before { content: "=F0=9F=97=BA"; }
+
+.iconochive-lock::before { content: "=F0=9F=94=92"; }
+
+.iconochive-unlock::before { content: "=F0=9F=94=93"; }
+
+.iconochive-twitter::before { content: "=F0=9F=90=A6"; }
+
+.iconochive-facebook::before { content: "f"; }
+
+.iconochive-googleplus::before { content: "g"; }
+
+.iconochive-reddit::before { content: "=F0=9F=91=BD"; }
+
+.iconochive-tumblr::before { content: "T"; }
+
+.iconochive-pinterest::before { content: "=F0=9D=93=9F"; }
+
+.iconochive-popcorn::before { content: "=F0=9F=92=A5"; }
+
+.iconochive-email::before { content: "=F0=9F=93=A7"; }
+
+.iconochive-embed::before { content: "=F0=9F=94=97"; }
+
+.iconochive-gamepad::before { content: "=F0=9F=95=B9"; }
+
+.iconochive-Zoom_In::before { content: "+"; }
+
+.iconochive-Zoom_Out::before { content: "-"; }
+
+.iconochive-RSS::before { content: "=F0=9F=93=A8"; }
+
+.iconochive-Light_Bulb::before { content: "=F0=9F=92=A1"; }
+
+.iconochive-Add::before { content: "=E2=8A=95"; }
+
+.iconochive-Tab_Activity::before { content: "=E2=8C=98"; }
+
+.iconochive-Forward::before { content: "=E2=8F=A9"; }
+
+.iconochive-Backward::before { content: "=E2=8F=AA"; }
+
+.iconochive-No_Audio::before { content: "=F0=9F=94=88"; }
+
+.iconochive-Pause::before { content: "=E2=8F=B8"; }
+
+.iconochive-No_Favorite::before { content: "=E2=98=86"; }
+
+.iconochive-Unike::before { content: "=E2=99=A1"; }
+
+.iconochive-Song::before { content: "=E2=99=AB"; }
+
+.iconochive-No_Flag::before { content: "=E2=9A=90"; }
+
+.iconochive-Flag::before { content: "=E2=9A=91"; }
+
+.iconochive-Done::before { content: "=E2=9C=93"; }
+
+.iconochive-Check::before { content: "=E2=9C=94"; }
+
+.iconochive-Refresh::before { content: "=E2=9F=B3"; }
+
+.iconochive-Headphones::before { content: "=F0=9F=8E=A7"; }
+
+.iconochive-Chart::before { content: "=F0=9F=93=88"; }
+
+.iconochive-Bookmark::before { content: "=F0=9F=93=91"; }
+
+.iconochive-Documents::before { content: "=F0=9F=93=9A"; }
+
+.iconochive-Newspaper::before { content: "=F0=9F=93=B0"; }
+
+.iconochive-Podcast::before { content: "=F0=9F=93=B6"; }
+
+.iconochive-Radio::before { content: "=F0=9F=93=BB"; }
+
+.iconochive-Cassette::before { content: "=F0=9F=93=BC"; }
+
+.iconochive-Shuffle::before { content: "=F0=9F=94=80"; }
+
+.iconochive-Loop::before { content: "=F0=9F=94=81"; }
+
+.iconochive-Low_Audio::before { content: "=F0=9F=94=89"; }
+
+.iconochive-First::before { content: "=F0=9F=8E=96"; }
+
+.iconochive-Invisible::before { content: "=F0=9F=95=B6"; }
+
+.iconochive-Computer::before { content: "=F0=9F=96=B3"; }
+------MultipartBoundary--9T4JqKLUaf93Zk577o8OFqGgQfm235Y1wwXzlB07sQ------

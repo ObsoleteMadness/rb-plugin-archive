@@ -1,0 +1,50 @@
+SimpleCMD_Socket 0.3
+
+SimpleCMD_Socket is a socket class to easily implement sockets that can exchange arbitrary commands
+with as many arguments as you want. It relies on a little command class called Socket_Command. As you
+see from the version number, I've just written it in one day and there's not much documentation for it yet.
+
+1. Installation
+
+Drop the SimpleCMD_Socket and the Socket_Command classes onto your project window in Realbasic.
+
+2. Usage
+
+To send a command with a SimpleCMD_Socket, you first have to create a new instance of the Socket_Command class. On creation, it takes a number between 0-65335 (?) as argument: this is your  command token. In the following examples I'll use integer constants and not any number itself, because it's better.
+
+Calling a remote host and listening is like with ordinary sockets, so I assume that you are already connected with a remote host now. To send a command, do the following:
+
+Dim c as Socket_Command
+
+c = new Socket_Command( CHAT ) // CHAT be an integer constant, say 1
+
+c.append "Hello World!" // the command now has one argument 
+c.append "How are you?" // another argument
+
+SimpleCMD_Socket1.send c // now send the command
+
+The other host will receive the command in the, guess where, in the
+
+Receive(command as Socket_Command)
+
+event.
+
+To query the contents of a received command, use the following methods/properties:
+
+command.command // contains the command token as integer
+
+command.NthArgument(index as Integer) as String
+
+retrieve the nth argument, "" if not there
+
+command.ListCount() as Integer
+
+returns the number of arguments available.
+
+Arguments are always strings and may be of arbitrary length limited only by memory. Please note that this class isn't designed to transmit very large amounts of data--- I'll write another class for that soon :-)
+
+Have fun!
+
+Send nasty bug reports, flames & donations to: 
+
+Erich Rast ( h0444zkf@rz.hu-berlin.de )

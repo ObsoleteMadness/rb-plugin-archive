@@ -1,0 +1,103 @@
+HSH_HashTable 1.2 Documentation
+
+Author:  Erich Rast
+Version: 1.2
+Date:    17/12/99
+
+I. Introduction
+
+HSH_HashTable is a simple replacement for RB built-in collection class. As of the time this is being written, the RB collection class uses a rather slow, apparently brute-force data retrieval mechanism. HSH_HashTable implements faster acess at cost of space. It uses multiplicative hashing on a static object array to retrieve an object with a given key. 
+
+However, this implementation has a real idiotic hash-collision management strategy. It always uses a list to store objects and simply appends collided objects to the list, searching the object list sequentially when a key collision appears. As for each object stored an individual list is created, and each key is stored as well, the implementation is rather memory-consuming.
+
+The package contains three classes: hsh_HashObject, hsh_HashEntry, hsh_HashTable
+
+II. Usage
+
+To use a hashtable, drag all of the three classes onto your project window. To create a new hsh_HashTable with a maximum of 1000 entries, use:
+
+Dim h as hsh_HashTable
+h = new hsh_HashTable(1000)
+
+the constructor takes the expected maximum number of items in the table.
+
+To add an object to the table, the object must be an instance of the class interface hsh_HashObject. In your own custom class definition, you therefore have to add hsh_HashObject to the interface property in the properties window of the class. An object is then added by
+
+add obj as hsh_HashObject, key as String
+
+an object is retrieved by
+
+get( key as String) as hsh_HashObject
+
+For example, to retrieve an object with key "john smith" of class someClass (which is also an hsh_HashObject), you'd use:
+
+Dim myObj as someClass
+myObj = someClass( hashtable.get("john smith"))
+
+The get() function returns NIL if the object hasn't been stored by the given key. You usually will have to typecast you object back to the original class like shown in the above sample.
+
+III. Methods
+
+1. Constructor
+
+hsh_HashTable( size as Integer )
+
+create a new hash table as big as given by size. The number of elements may actually get bigger than size, but then the access to individial items may slow down significantly. HSH_HashTables are static, you cannot resize them later.
+
+2. Accessor Methods
+
+get( key as String ) as hsh_HashObject
+get( i as Integer ) as hsh_HashObject
+item( key as String ) as hsh_HashObject
+item( i as Integer ) as hsh_HashObject
+
+return an item by a given key or by a given index (1-based). Please note that, differing from RB Collections, the order of the object in the table is unspecified and that accessing an item by index i is very slow! If you use the index access for more than just dumping the whole contents of a table, you should use an array instead! 
+
+key( i as Integer ) as hsh_HashObject
+
+return i-th key in the table. 1-based and the order is unspecified.
+
+3. Assignment Methods
+
+add( obj as hsh_HashObject, key as String )
+
+add obj to the table, using key as hash 
+
+4. Destructor Methods
+
+remove( key as String )
+
+remove the object specified by key. Does nothing if there's no object with key.
+
+5. Miscellaneous
+
+count() as Integer
+
+return the number of items stored in the table
+
+
+IV. Limitations & Known Bugs
+
+A KEY STRING MAY ONLY BE UP TO 32 CHARACTERS IN LENGTH. Any additional characters will be truncated. You currently cannot add or remove an object by index, and this functionality is very unlikely to be added in future. If you need access by index, you don't need a hash-table but an ordinary array. 
+
+The classes have not been tested extensively yet, so please write bug reports and improvements to:
+
+erich@snafu.de
+
+Feel free to use the classes as basis to your own hashtable implementations, and if you develop a nice improved hashtable class, please make it available to others so everyone can benefit of it.
+
+The package is provided "as is" without any warranty.
+
+V. Credits & Contact
+
+Many thanks to pantarei for his bug reports and toughtful commentaries. :-)
+
+Updates of the HSH_HashTable package can always be found at:
+
+http://www.snafu.de/~erich/realbasic/rb.html
+
+Send questions and bug reports to erich@snafu.de
+
+Greetings,
+
+Erich Rast 
